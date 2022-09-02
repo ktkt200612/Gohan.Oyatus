@@ -1,0 +1,88 @@
+body {
+    width: 1280px;
+    line-height: 70px;
+    margin: 0 auto;
+    background-color: rgb(252, 252, 252);
+}
+
+a:not(.header__title) {
+    text-decoration: none;
+    color: rgb(121, 121, 8);
+}
+
+a:hover {
+    color: rgb(91, 91, 7);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    line-height: 30px;
+    background-color: rgb(246, 246, 246);
+    border-bottom: 0.3rem solid;
+    border-color: rgb(205, 205, 205);
+    box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
+
+}
+
+.header__title {
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: rgb(10, 9, 10);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.header__title:first-letter {
+    font-size: 2em;
+    color: rgb(144, 144, 33);
+}
+
+.header__nav--list {
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 17px;
+    font-weight: lighter;
+    font-size: 87%;
+}
+
+.about {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+.about__title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.pickup {
+    text-align: center;
+    margin-left: 34%;
+    margin-right: 33%;
+    line-height: 35px;
+}
+
+.pickup__text {
+    border-bottom: 0.1rem solid;
+    border-color: rgb(205, 205, 205);
+}
+
+img {
+    border-radius: 15px;
+}
+
+.img {
+    text-align: center;
+}
+
+.img__bottom {
+    margin-top: -25px;
+    text-align: center;
+}

@@ -1,0 +1,307 @@
+body {
+    width: 1280px;
+    line-height: 70px;
+    margin: 0 auto;
+    background-color: rgb(250, 249, 249);
+}
+
+a:not(.header__title) {
+    text-decoration: none;
+    color: rgb(121, 121, 8);
+}
+
+a:hover {
+    color: rgb(91, 91, 7);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    line-height: 30px;
+    background-color: rgb(246, 246, 246);
+    border-bottom: 0.3rem solid;
+    border-color: rgb(205, 205, 205);
+    box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
+
+}
+
+.header__title {
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: rgb(10, 9, 10);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.header__title:first-letter {
+    font-size: 2em;
+    color: rgb(144, 144, 33);
+}
+
+.header__nav--list {
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 17px;
+    font-weight: lighter;
+    font-size: 87%;
+}
+
+.search {
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -30px;
+    background-color: rgb(250, 249, 249);
+}
+
+
+.area,
+.genre,
+.word,
+.button {
+    line-height: 25px;
+    display: inline-block;
+}
+
+
+
+select {
+    padding: 5px 10px;
+    font-size: 87%;
+}
+
+input {
+    padding: 5px 20px;
+    width: 130%;
+    font-size: 86%;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.button {
+    margin-left: 100px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.button--search {
+    padding: 5px 56px;
+    font-size: 87%;
+    background-color: rgb(159, 159, 149);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* 四角にカーソル当てた時 */
+.button :hover {
+    background: rgb(255, 166, 0);
+    color: white;
+}
+
+.button--reset {
+    padding: 5px 42px;
+    font-size: 87%;
+    background-color: rgb(159, 159, 149);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+
+.page {
+    margin-left: 10px;
+
+}
+
+.container {}
+
+.form {
+
+    margin-bottom: 16px;
+
+}
+
+.container-button {
+    width: 90%;
+    margin-left: 62px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-top: 1px solid rgb(159, 159, 149);
+    border-bottom: 1px solid rgb(159, 159, 149);
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgb(185, 185, 185);
+    padding-top: 20px;
+    padding-bottom: 17px;
+
+
+}
+
+
+.photo {
+    display: inline-block;
+}
+
+.outside {
+    margin-right: 6px;
+}
+
+.inside {}
+
+.information {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 3px;
+    text-align: left;
+    padding-left: 30px;
+
+
+
+
+
+
+}
+
+.store-name {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    word-break: break-all;
+
+}
+
+.store-name:hover {
+    color: rgb(121, 121, 8);
+}
+
+.address {
+    font-size: 15px;
+    color: rgb(55, 55, 55);
+    word-break: break-all;
+}
+
+.genre {
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(55, 55, 55);
+
+}
+
+.holiday {
+    font-size: 15px;
+    color: rgb(55, 55, 55);
+
+}
+
+.hours {
+    font-size: 15px;
+    color: rgb(55, 55, 55);
+
+}
+
+.number {
+    font-size: 15px;
+    color: rgb(55, 55, 55);
+}
+
+.address-item {
+
+    width: 90%;
+    vertical-align: top;
+    margin-bottom: 14px;
+    padding-left: 10px;
+}
+
+.genre-item {
+
+    width: 90%;
+    vertical-align: top;
+    margin-bottom: 14px;
+    padding-left: 10px;
+
+}
+
+.holiday-item {
+
+    width: 90%;
+    vertical-align: top;
+    margin-bottom: 14px;
+    padding-left: 10px;
+
+}
+
+.hours-item {
+    width: 90%;
+    vertical-align: top;
+    margin-bottom: 14px;
+    padding-left: 10px;
+
+}
+
+.number-item {
+    width: 83%;
+    vertical-align: top;
+    margin-bottom: 14px;
+    padding-left: 10px;
+
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    color: rgb(121, 121, 8);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* 矢印から矢印まで */
+.pagination li {
+    padding: 0px 20px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 1px;
+}
+
+/* 四角にカーソル当てた時 */
+.pagination li:hover {
+    background: rgb(121, 121, 8);
+    color: white;
+}
+
+/* 数字にカーソル当てた時  */
+.page-item :hover {
+    background: rgb(121, 121, 8);
+    color: white;
+}
+
+/* 現在ページ */
+.active {
+    background: rgb(121, 121, 8);
+    color: white;
+}

@@ -1,0 +1,170 @@
+body {
+    width: 1280px;
+    line-height: 70px;
+    margin: 0 auto;
+    background-color: rgb(252, 252, 252);
+}
+
+a:not(.header__title) {
+    text-decoration: none;
+    color: rgb(121, 121, 8);
+}
+
+a:hover {
+    color: rgb(91, 91, 7);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    line-height: 30px;
+    background-color: rgb(246, 246, 246);
+    border-bottom: 0.3rem solid;
+    border-color: rgb(205, 205, 205);
+    box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
+
+}
+
+.header__title {
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: rgb(10, 9, 10);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.header__title:first-letter {
+    font-size: 2em;
+    color: rgb(144, 144, 33);
+}
+
+.header__nav--list {
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 17px;
+    font-weight: lighter;
+    font-size: 87%;
+}
+
+
+.title {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+    font-size: 25px;
+    margin: 40px 0 1px 150px;
+}
+
+.title:before,
+.title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.title:before {
+    left: 0;
+}
+
+.title:after {
+    right: 0;
+}
+
+
+.edit-item {
+    margin-left: 110px;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(222, 222, 181);
+    ;
+    width: 82%;
+    padding-top: 51px;
+    padding-left: 17px;
+    background-color: rgb(237, 237, 186);
+
+}
+
+.item {
+    line-height: 10px;
+    font-weight: bolder;
+}
+
+.required {
+    color: white;
+    background-color: red;
+    margin-left: 9px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: lighter;
+    vertical-align: 1.3px;
+}
+
+.caution {
+    color: rgb(121, 121, 121);
+    font-size: 15px;
+    font-weight: light;
+}
+
+input {
+    line-height: 25px;
+    font-size: 15px;
+    width: 45%;
+    margin-top: -30px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+select {
+    margin-top: -27px;
+    width: 15%;
+    padding: 6.5px 0 6.5px;
+    font-size: 15px;
+}
+
+.genre-top {
+    margin-bottom: -105px;
+}
+
+
+
+
+button {
+    padding: 5px 56px;
+    font-size: 87%;
+    background-color: rgb(159, 159, 149);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+/* 四角にカーソル当てた時 */
+.edit-button :hover {
+    background: rgb(255, 166, 0);
+    color: white;
+}
+
+.error-message {
+    font-size: 16px;
+    color: #ff7676;
+
+}

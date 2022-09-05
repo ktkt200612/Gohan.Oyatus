@@ -33,50 +33,54 @@
     </ul>
   </nav>
 </header>
-<h1>お問い合わせ・アンケート　※アンケートだけでもぜひお願いします</h1>
+<h1 class="title">お問い合わせ・アンケート<br>※アンケートだけでもぜひお願致します</h1>
+<div class="container">
   <form action="{{ route('contact.confirm') }}" method="post" >
     @csrf
-    <div>
-      <label for="name">ユーザー名 or お名前</label>
-      <input type="text" name="name" id="name" @auth value="<?php $user = Auth::user(); ?>{{ $user->name}}" @endauth value="{{ old('name') }}" />
+    <div class="item-title">
+      <label for="name" class="title-name">ユーザー名 or お名前</label><span class="required">必須</span>
     </div>
-    <div>
+    <input type="text" name="name" id="name" @auth value="<?php $user = Auth::user(); ?>{{ $user->name}}" @endauth value="{{ old('name') }}" />
+    <div class=error>
       @error('name')
         {{ $message }}
       @enderror
     </div>
-    <div class="gender">
-      <span>性別</span>
-      <input type="radio" name="gender" value="1" id="male" checked  {{ old('gender') == '1' ? 'checked' : '' }}><label for="review000" checked ><label for="male">男性</label>
-      <input type="radio" name="gender" value="2" id="female"  {{ old('gender') == '2' ? 'checked' : '' }}><label for="review000" checked ><label for="female">女性</label>
+    <div class="item-title">
+      <span class="title-gender" >性別</span><span class="required">必須</span>
     </div>
-    <div>
+    <input type="radio" name="gender" value="1" id="male" checked  {{ old('gender') == '1' ? 'checked' : '' }}><label for="review000" checked ><label for="male">男性</label>
+    <input type="radio" name="gender" value="2" id="female"  {{ old('gender') == '2' ? 'checked' : '' }}><label for="review000" checked ><label for="female">女性</label>
+    <div class=error>
       @error('gender')
         {{ $message }}
       @enderror
     </div>
-    <div>
-      <label for="email">メールアドレス</label>
-      <input type="text" name="email" id="email" @auth value="<?php $user = Auth::user(); ?>{{ $user->email}}"  @endauth value="{{ old('email') }}" />
+    <div class="item-title">
+      <label for="email" class="title-email">メールアドレス</label><span class="required">必須</span>
     </div>
-    <div>
+    <input type="text" name="email" id="email" @auth value="<?php $user = Auth::user(); ?>{{ $user->email}}"  @endauth value="{{ old('email') }}" />
+    <div class=error>
       @error('email')
         {{ $message }}
       @enderror
     </div>
-    <div>
-      <label for="opinion">内容</label>
-      <textarea name="opinion" id="opinion" cols="30" rows="10" maxlength="120" placeholder="本サイトに対しての疑問・要望・ご意見など" >{{ old('opinion') }}</textarea>
-      <span>※120文字以内で入力してください</span>
+    <div class="item-title">
+      <label for="opinion" class="opinion">内容</label>
+    </div>
+    <textarea name="opinion" id="opinion" cols="30" rows="10" maxlength="120"  >{{ old('opinion') }}</textarea>
+    <div class="careful">※本サイトに対しての疑問・要望・ご意見など<br>※120文字以内で入力してください
+    </div>
+    <div class=error>
       @error('opinion')
         {{ $message }}
       @enderror
     </div>
-    <p>本サイトに対するレビュー</p>
+    <p class="review-title">本サイトに対するアンケート</p>
     <div class="review1"> 
-      機能充実度
+      <span class="title-review1">①機能充実度</span>
       <div class="stars1">
-        <input id="review0" type="radio" name="review1"  value="0" checked {{ old('review1') == '0' ? 'checked' : '' }}><label for="review0" checked >未選択</label>
+        <input id="review0" type="radio" name="review1"  value="0" checked {{ old('review1') == '0' ? 'checked' : '' }}><label for="review0" checked class="unselected">未選択</label>
         <span>
           <input id="review1" type="radio" name="review1" value="5" {{ old('review1') == '5' ? 'checked' : '' }}><label for="review1">★</label>
           <input id="review2" type="radio" name="review1" value="4"  {{ old('review1') == '4' ? 'checked' : '' }}><label for="review2">★</label>
@@ -87,9 +91,9 @@
       </div>
     </div>
     <div class="review2">
-      期待度
+      <span class="title-review2">②期待度</span>
       <div class="stars2">
-        <input id="review00" type="radio" name="review2" value="0" checked  {{ old('review2') == '0' ? 'checked' : '' }}><label for="review00" checked >未選択</label>
+        <input id="review00" type="radio" name="review2" value="0" checked  {{ old('review2') == '0' ? 'checked' : '' }}><label for="review00" checked class="unselected" >未選択</label>
         <span>
           <input id="review01" type="radio" name="review2" value="5"  {{ old('review2') == '5' ? 'checked' : '' }}><label for="review01">★</label>
           <input id="review02" type="radio" name="review2" value="4"  {{ old('review2') == '4' ? 'checked' : '' }}><label for="review02">★</label>
@@ -100,9 +104,9 @@
       </div>
     </div>
     <div class="review3">
-      好き度
+      <span class="title-review3">③好き度</span>
       <div class="stars3">
-        <input id="review000" type="radio" name="review3" value="0" checked  {{ old('review3') == '0' ? 'checked' : '' }}><label for="review000" checked >未選択</label>
+        <input id="review000" type="radio" name="review3" value="0" checked  {{ old('review3') == '0' ? 'checked' : '' }}><label for="review000" checked class="unselected" >未選択</label>
         <span>
           <input id="review001" type="radio" name="review3" value="5"  {{ old('review3') == '5' ? 'checked' : '' }}><label for="review001">★</label>
           <input id="review002" type="radio" name="review3" value="4"  {{ old('review3') == '4' ? 'checked' : '' }}><label for="review002">★</label>
@@ -112,12 +116,13 @@
         </span>
       </div>
     </div>
-    <div>
-      <button type="submit">確認</button>
+    <div class="confirm">
+      <button type="submit" >確認</button>
     </div>
   </form>
   <script src="{{ asset('js/contact.js') }}"></script>
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</div>
 
 
 @endsection

@@ -292,6 +292,7 @@ button {
 .pagination li:hover {
     background: rgb(121, 121, 8);
     color: white;
+    font-size: 30px;
 }
 
 /* 数字にカーソル当てた時  */

@@ -39,7 +39,7 @@
   <form action="{{ route('contact.send') }}" method="post">
     @csrf
     <div class="item">
-      <span class=name>・ユーザー名又はお名前</span>
+      <span class=name>・ユーザー名 or お名前</span>
       {{ $form['name']  }}
       <input type="hidden" name="name" value="{{ $form['name'] }}" />
     </div>
@@ -54,7 +54,7 @@
     </div>
     <div class="item">
       <span class=mail>・メールアドレス</span>
-      {{ $form['email']  }}
+      <label class="opinion-ans">{{ $form['email']  }}
       <input type="hidden" name="email" value="{{ $form['email'] }}" />
     </div>
     

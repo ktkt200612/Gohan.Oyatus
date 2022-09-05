@@ -39,7 +39,7 @@
   <form action="{{ route('contact.search') }}" method="post" class="form-content">
     @csrf
     <div>
-      <label for="name">ユーザー名 or お名前</label>
+      <label for="name">ユーザー名 or 名前</label>
       <input type="text" name="name" id="name" >
       <span class=gender >性別</span>
       <input type="radio" name="gender" value="0" id="all" checked /><span class="all">全て</span>
@@ -71,8 +71,7 @@
     <div>
       @if (count($forms) > 0)
         <p>全{{ $forms->total() }}件中
-          {{ ($forms->currentPage() - 1) * $forms->perPage() + 1 }}〜
-          {{ ($forms->currentPage() - 1) * $forms->perPage() + 1 + (count($forms) - 1) }}件</p>
+          {{ ($forms->currentPage() - 1) * $forms->perPage() + 1 }}〜{{ ($forms->currentPage() - 1) * $forms->perPage() + 1 + (count($forms) - 1) }}件</p>
       @else
         <p>データがありません。</p>
       @endif
@@ -84,14 +83,14 @@
   <div class="form-table">
     <table>
       <tr class="table-title">
-        <th scope="col">@sortablelink('id', 'ID')</th>
-        <th scope="col">@sortablelink('name', 'ユーザー名又はお名前')</th>
-        <th scope="col">@sortablelink('gender', '性別')</th>
-        <th scope="col">@sortablelink('email', 'メールアドレス')</th>
-        <th scope="col">@sortablelink('opinion', '内容')</th>
-        <th scope="col">@sortablelink('review1', '機能充実度')</th>
-        <th scope="col">@sortablelink('review2', '期待度')</th>
-        <th scope="col">@sortablelink('review3', '好き度')</th>
+        <th scope="col" class="id">@sortablelink('id', 'ID')</th>
+        <th scope="col" class="name">@sortablelink('name', 'ユーザー名 or 名前')</th>
+        <th scope="col" class="gender">@sortablelink('gender', '性別')</th>
+        <th scope="col" class="email">@sortablelink('email', 'メールアドレス')</th>
+        <th scope="col" class="opinion">@sortablelink('opinion', '内容')</th>
+        <th scope="col" class="review1">@sortablelink('review1', '機能充実度')</th>
+        <th scope="col" class="review2">@sortablelink('review2', '期待度')</th>
+        <th scope="col" class="review3">@sortablelink('review3', '好き度')</th>
         <th></th>
       </tr>
       @foreach ($forms as $form)
@@ -105,8 +104,8 @@
               女性
             @endif
           </td>
-          <td>{{ $form->email }}</td>
-          <td class="opinion">{{ $form->opinion }}</td>
+          <td  class="form-email">{{ $form->email }}</td>
+          <td class="form-opinion">{{ $form->opinion }}</td>
           <td>
             @if ($form->review1 == '0')
               未選択

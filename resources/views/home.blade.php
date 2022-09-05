@@ -42,12 +42,12 @@
   </div>
 </div>
 <div class="img">
-  <img src="image/home4.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
-  <img src="image/home7.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
+  <img src="image/home1.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
+  <img src="image/home5.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
   <img src="image/home3.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
   <div class="img__bottom">
-    <img src="image/home1.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
-    <img src="image/home5.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
+    <img src="image/home4.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
+    <img src="image/home7.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
     <img src="image/home6.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
     <img src="image/home2.jpg" alt="img" width="24.5%" height="300" onerror="this.src='image/noimage.png';this.onerror=false;" />
   </div>

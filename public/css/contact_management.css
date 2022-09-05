@@ -160,3 +160,131 @@ input[type="radio"] {
     background: rgb(134, 134, 133);
     color: white;
 }
+
+
+
+
+
+
+table {
+    width: 99%;
+    text-align: left;
+    margin: 0 auto;
+
+
+}
+
+
+
+td {
+    vertical-align: top;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+th {
+    border-bottom: 1px solid #000;
+
+}
+
+
+.id {
+    width: 4%;
+}
+
+.name {
+    width: 15%;
+}
+
+.gender {
+    width: 6%;
+}
+
+.email {
+    width: 20%;
+
+}
+
+.opinion {
+    width: 30%;
+
+
+}
+
+.review1 {
+    width: 10%;
+}
+
+.review2 {
+    width: 10%;
+}
+
+.review3 {
+    width: 10%;
+}
+
+
+
+.form-opinion {
+    display: inline-block;
+    margin-right: 20px;
+
+    line-height: 20px;
+    word-break: break-all;
+
+
+}
+
+.form-email {
+
+    padding-right: 20px;
+    word-break: break-all;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------ページネーション------------- */
+.table-page {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+.pagination li {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0 15px 0;
+    float: left;
+    line-height: 40px;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination .active {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.pagination li:hover:not(.active, .disabled) {
+    background-color: #ddd;
+}

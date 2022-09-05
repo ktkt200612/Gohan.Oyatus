@@ -52,26 +52,106 @@ header {
 
 
 
+.title {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
 
-.error-message {
+.container {
+    width: 80%;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgb(243, 243, 243);
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+.title-name,
+.title-gender,
+.title-email,
+.opinion,
+.review1,
+.review2,
+.review3 {
+    display: inline;
+
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+
+.item-title {
+    display: inline-block;
+    width: 30%;
+
+
+}
+
+input[type="text"] {
+    width: 29.5%;
+    padding: 6px 3px;
+}
+
+input[type="radio"] {
+
+    transform: scale(2.0);
+    accent-color: rgb(255, 166, 0);
+    width: 3%;
+}
+
+textarea {
+    width: 30%;
+    vertical-align: top;
+    margin-top: 23px;
+    height: 110px;
+
+
+}
+
+
+.required {
+    color: white;
+    background-color: red;
+    margin-left: 9px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: lighter;
+    vertical-align: 1.3px;
+}
+
+.careful {
+    line-height: 20px;
+    margin-left: 320px;
+    color: #8f8f8f;
+}
+
+.error {
     font-size: 16px;
     color: #ff7676;
-
+    margin-left: 640px;
+    line-height: 0px;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 
-.opinion {
-    display: block;
-    width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
-.opinion:hover {
-    white-space: normal;
-    width: 700px;
-}
+
 
 
 .stars1 span,
@@ -116,4 +196,53 @@ header {
 .stars3 input[type='radio']:checked~label {
     color: #F8C601;
     /* 選択された星以降をすべて黄色にする */
+}
+
+
+.review-title {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+.review1,
+.review2,
+.review3 {
+    display: inline-block;
+    line-height: 30px;
+}
+
+label .unselected {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+button {
+    padding: 5px 56px;
+    font-size: 87%;
+
+    background-color: rgb(159, 159, 149);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+
+
+/* 四角にカーソル当てた時 */
+.confirm :hover {
+    background: rgb(134, 134, 133);
+    color: white;
 }

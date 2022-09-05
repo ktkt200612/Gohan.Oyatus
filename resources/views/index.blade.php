@@ -127,7 +127,7 @@
   @csrf
     <button type="submit"  name="id" value="{{ $form->id }}" class="container-button">
       <div class="photo">
-        <img src="{{ Storage::url($form->outside_photo) }}"  width="300" height="300" class="outside" onerror="this.src='image/noimage.png';this.onerror=false;" ><img src="{{ Storage::url($form->inside_photo) }}"  width="300" height="300" class="inside" onerror="this.src='image/noimage.png';this.onerror=false;" >
+        <img src="{{ Storage::url($form->outside_photo) }}"  width="300" height="300" class="outside" onerror="this.src='image/no_image.png';this.onerror=false;" ><img src="{{ Storage::url($form->inside_photo) }}"  width="300" height="300" class="inside" onerror="this.src='image/no_image.png';this.onerror=false;" >
       </div>
       <div class="information">
         <div class="store-name">

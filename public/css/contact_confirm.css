@@ -83,6 +83,8 @@ span {
     font-weight: bold;
 }
 
+
+
 .opinion {
     margin-top: 30px;
     vertical-align: top;
@@ -95,7 +97,7 @@ span {
     vertical-align: top;
     width: 400px;
     display: inline-block;
-    width: 40%;
+    word-break: break-all;
 
 }
 

@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -50,22 +52,23 @@
     @error('kana')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">限定品情報 <span class="caution">※14文字以内で入力して下さい (例) 夏季限定・数量限定 etc</span></div>
-    <input type="text" name="limited" @if(empty( $form->limited ))  placeholder="感想等のレビューは入力しないこと　(例) 夏季限定・数量限定 etc" @else value = {{ $form->limited }}   @endif >
+    <div class="item">限定品情報 <span class="caution"> (例) 夏季限定・数量限定 etc</span></div>
+    <input type="text" name="limited" @if(empty( $form->limited ))  placeholder="(例) 夏季限定・数量限定 etc" @else value = {{ $form->limited }}   @endif >
     @error('limited')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">検索ワード <span class="caution">(例) パフェ・いちご・魚 etc</span></div>
-    <input type="text" name="search_word" @if(empty( $form->search_word ))   placeholder="料理につながるワードを入力　(例) パフェ・いちご・魚 etc" @else  value = {{ $form->search_word }} @endif >
+    <div class="item">検索ワード <span class="caution">  ※料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
+    <input type="text" name="search_word" @if(empty( $form->search_word ))   placeholder="料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc" @else  value = {{ $form->search_word }} @endif >
   </div>
   <div class="edit-button">
     <button name="id" value="{{ $form->id }}">編集完了</button>
   </div>
 </form>
-<div class="edit-button">
-  <form method="GET" action="{{ route('menu.delete.page') }}">
-  @csrf
+
+<form method="GET" action="{{ route('menu.delete.page') }}">
+@csrf
+  <div class="delete-button">
     <button name="id" value="{{ $form->id }}">メニュー削除</button>
-  </form>
-</div>
+  </div>
+</form>
 @endsection

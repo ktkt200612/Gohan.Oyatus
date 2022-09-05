@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -32,33 +34,37 @@
   </nav>
 </header>
 
-<h1 class="title">貢献度ポイントランキング</h1>
+<div class="container">
+  <h1 class="title">Gohan.Oyatsu 貢献度ポイントランキング</h1>
+  <?php
+  $rank = 1;
+  $cnt = 1;
+  $previous_point = 0;
 
-
-<table>
-  <tr>
-    <th>お名前</th>
-    <th>合計獲得ポイント総数</th>
-    <th>店舗登録</th>
-    <th>メニュー登録数</th>
-  </tr>
-  @foreach ($items as $item)
-  <tr>
-    <td>
-      {{$item->getUserName()}}
-    </td>
-    <td>
-      {{$item->getPoint()}}
-    </td>
-    <td>
-      {{$item->getStoreQuantity()}}
-    </td>
-    <td>
-      {{$item->getMenuQuantity()}}
-    </td>
-  </tr>
-  @endforeach
-</table>
-  
-</form>
+  $ranking = '';
+  $ranking .= '<table>';
+  $ranking .= '<tr><th>順位</th><th>ユーザー名</th><th>ポイント</th><th>店舗登録数</th><th>メニュー登録数</th></tr>';
+  foreach($items as $item){
+    if($previous_point != $item['point']){
+        $rank = $cnt;
+    }
+    if ($rank >= 6){
+        break;
+    }
+    $ranking .= '<tr>';
+    $ranking .= '<td class="rank">'.$rank.'</td>';
+    $ranking .= '<td>'.$item['name'].' さん'.'</td>';
+    $ranking .= '<td>'.$item['point'].' pt'.'</td>';
+    $ranking .= '<td>'.$item['store_quantity'].'</td>';
+    $ranking .= '<td>'.$item['menu_quantity'].'</td>';
+    $ranking .= '</tr>';
+    $previous_point = $item['point'];
+    $cnt++;
+    
+  }
+  $ranking .= '</table>';
+  echo $ranking;
+  ?>
+  <p class="a">※上位5位まで表示しています</p>
+</div>
 @endsection

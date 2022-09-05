@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -32,94 +34,97 @@
   </nav>
 </header>
 
-<h1>内容確認</h1>
+<h1 class="title">内容確認</h1>
+<div class="container">
   <form action="{{ route('contact.send') }}" method="post">
     @csrf
-    <div>
-      <label>お名前</label>
+    <div class="item">
+      <span class=name>・ユーザー名又はお名前</span>
       {{ $form['name']  }}
       <input type="hidden" name="name" value="{{ $form['name'] }}" />
     </div>
-    <div>
-      <span>性別</span>
+    <div class="item">
+      <span class=gender>・性別</span>
       @if ($form['gender'] === '1')
-        <span>男性</span>
+        男性
       @elseif ($form['gender'] === '2')
-        <span>女性</span>
+        女性
       @endif
       <input type="hidden" name="gender" value="{{ $form['gender'] }}" />
     </div>
-    <div>
-      <label>メールアドレス</label>
+    <div class="item">
+      <span class=mail>・メールアドレス</span>
       {{ $form['email']  }}
       <input type="hidden" name="email" value="{{ $form['email'] }}" />
     </div>
     
-    <div>
-      <span>ご意見</span>
-      <span>{{ $form['opinion']  }}</span>
+    <div class="item">
+      <span class=opinion>・ご意見</span>
+      <label class="opinion-ans">{{ $form['opinion']  }}</label>
       <input type="hidden" name="opinion" value="{{ $form['opinion'] }}">
     </div>
     
 
-    <div>
-      <div>
-        <span>機能充実度</span>
+      <div class="item">
+        <span class=review1>・機能充実度</span>
         @if ($form['review1'] === '0')
-          <span>未選択</span>
+          未選択
         @elseif ($form['review1'] === '1')
-          <span>星1</span>
+          星1
         @elseif ($form['review1'] === '2')
-          <span>星2</span>
+          星2
         @elseif ($form['review1'] === '3')
-          <span>星3</span>
+          星3
         @elseif ($form['review1'] === '4')
-          <span>星4</span>
+          星4
         @elseif ($form['review1'] === '5')
-          <span>星5</span>
+          星5
         @endif
         <input type="hidden" name="review1" value="{{ $form['review1'] }}" />
       </div>
-      <div>
-        <span>期待度</span>
+      <div class="item">
+        <span class=review2>・期待度</span>
         @if ($form['review2'] === '0')
-          <span>未選択</span>
+          未選択
         @elseif ($form['review2'] === '1')
-          <span>星1</span>
+          星1
         @elseif ($form['review2'] === '2')
-          <span>星2</span>
+          星2
         @elseif ($form['review2'] === '3')
-          <span>星3</span>
+          星3
         @elseif ($form['review2'] === '4')
-          <span>星4</span>
+          星4
         @elseif ($form['review2'] === '5')
-          <span>星5</span>
+          星5
         @endif
         <input type="hidden" name="review2" value="{{ $form['review2'] }}" />
       </div>
-      <div>
-        <span>好き度</span>
+      <div class="item">
+        <span class=review3>・好き度</span>
         @if ($form['review3'] === '0')
-          <span>未選択</span>
+          未選択
         @elseif ($form['review3'] === '1')
-          <span>星1</span>
+          星1
         @elseif ($form['review3'] === '2')
-          <span>星2</span>
+          星2
         @elseif ($form['review3'] === '3')
-          <span>星3</span>
+          星3
         @elseif ($form['review3'] === '4')
-          <span>星4</span>
+          星4
         @elseif ($form['review3'] === '5')
-          <span>星5</span>
+          星5
         @endif
         <input type="hidden" name="review3" value="{{ $form['review3'] }}" />
       </div>
-      <div>
-      <button type="submit" name="action" value="post">送信</button><br>
-      <button type="submit" name="action" value="back">修正する</button>
-    </div>
+      <div class="post">
+        <button type="submit" name="action" value="post" >送信</button>
+      </div>
+      <div class="back">
+        <button type="submit" name="action" value="back" class="b">修正する</button>
+      </div>
     </div>
   </form>
+</div>
 
 
 

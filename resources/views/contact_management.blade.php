@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -32,32 +34,39 @@
   </nav>
 </header>
 
-<h1>お問い合わせ管理システム</h1>
+<h1 class=title>お問い合わせ・アンケート管理システム</h1>
+<div class="container">
   <form action="{{ route('contact.search') }}" method="post" class="form-content">
     @csrf
     <div>
-      <label for="name">お名前</label>
-      <input type="text" name="name" id="name" />
-      <span >性別</span>
-      <input type="radio" name="gender" value="0" id="all" checked /><label for="all">全て</label>
-      <input type="radio" name="gender" value="1" id="male" /><label for="male">男性</label>
-      <input type="radio" name="gender" value="2" id="female" />女性
+      <label for="name">ユーザー名 or お名前</label>
+      <input type="text" name="name" id="name" >
+      <span class=gender >性別</span>
+      <input type="radio" name="gender" value="0" id="all" checked /><span class="all">全て</span>
+      <input type="radio" name="gender" value="1" id="male"><span  class="male">男性</span>
+      <input type="radio" name="gender" value="2" id="female"><span class="female">女性</span>
     </div>
     <div>
       <label for="created_from">登録日</label>
       <input type="date" name="created_from" id="created_from" />
-      <span> 〜 </span>
+      <span>　〜　</span>
       <input type="date" name="created_to" id="created_to" />
     </div>
     <div>
       <label for="email">メールアドレス</label>
       <input type="text" name="email" id="email" />
     </div>
-    <div>
-      <button type="submit" name="action" value="post">検索</button><br>
-      <button type="submit" formaction={{ route('contact.management') }} name="action" value="back">リセット</button>
+    <div class="button">
+      <div class="post">
+        <button type="submit" name="action" value="post" >検索</button>
+      </div><br>
+      <div  class=back>
+        <button type="submit" formaction={{ route('contact.management') }} name="action" value="back">リセット</button>
+      </div>
     </div>
   </form>
+</div>
+<div class="wrap">
   <div class="table-page">
     <div>
       @if (count($forms) > 0)
@@ -76,7 +85,7 @@
     <table>
       <tr class="table-title">
         <th scope="col">@sortablelink('id', 'ID')</th>
-        <th scope="col">@sortablelink('name', 'お名前')</th>
+        <th scope="col">@sortablelink('name', 'ユーザー名又はお名前')</th>
         <th scope="col">@sortablelink('gender', '性別')</th>
         <th scope="col">@sortablelink('email', 'メールアドレス')</th>
         <th scope="col">@sortablelink('opinion', '内容')</th>

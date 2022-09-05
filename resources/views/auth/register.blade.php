@@ -9,6 +9,8 @@
             <ul>
             <li class="header__nav--list"><a href="/home">ホーム</a></li>
             <li class="header__nav--list"><a href="/index">店舗検索</a></li>
+            <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+            <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +28,7 @@
                 <!-- Name -->
                 <div>
                     <x-label for="name"/>
-                    <x-input type="text" name="name" class="name" :value="old('name')" placeholder="名前"  required autofocus />
+                    <x-input type="text" name="name" class="name" :value="old('name')" placeholder="ユーザー名"  required autofocus />
                 </div>
 
                 <!-- Email Address -->

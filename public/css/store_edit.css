@@ -157,9 +157,15 @@ button {
 }
 
 
+
 /* 四角にカーソル当てた時 */
 .edit-button :hover {
     background: rgb(255, 166, 0);
+    color: white;
+}
+
+.delete-button :hover {
+    background: rgb(255, 85, 0);
     color: white;
 }
 

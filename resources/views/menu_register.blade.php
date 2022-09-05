@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -51,12 +53,12 @@
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">限定品情報</div>
-    <input type="text" name="limited"  value="{{ old('limited') }}" placeholder="感想等のレビューは入力しないこと　(例) 夏季限定・数量限定 etc">
+    <input type="text" name="limited"  value="{{ old('limited') }}" placeholder="(例) 夏季限定・数量限定 etc">
     @error('limited')
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">検索ワード</div>
-    <input type="text" name="search_word"  value="{{ old('search_word') }}" placeholder="料理につながるワードを入力　(例) パフェ・いちご・魚 etc" >
+    <input type="text" name="search_word"  value="{{ old('search_word') }}" placeholder="料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc" >
   </div>
   <div class="register-button">
     <button type="submit"  name="store_id" value="{{ $store_id }}">登録</button>

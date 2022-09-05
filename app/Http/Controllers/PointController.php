@@ -70,11 +70,11 @@ class PointController extends Controller
             }
 
 
-        $items = User::all();
+        $items = User::all()->sortByDesc("point");
         return view('point', ['items'=>$items]);
 
         }else{
-        $items = User::all();
+        $items = User::all()->sortByDesc("point");
         return view('point', ['items'=>$items]);
         }
     }

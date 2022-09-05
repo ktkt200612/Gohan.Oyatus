@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -35,7 +37,8 @@
   <p class="about__title">和歌山県内の飲食店を盛り上げよう</p>
   <div class="pickup">
     <p class="pickup__text">みんなで飲食店のメニューを作り上げていくサイトです</p>
-    <p class="pickup__text">おすすめの店舗、料理を投稿してください</p>
+    <p class="pickup__text">会員登録をして、おすすめの店舗、料理を投稿して下さい</p>
+    <p class="pickup__text">お店探しにもぜひご利用下さい！！</p>
   </div>
 </div>
 <div class="img">

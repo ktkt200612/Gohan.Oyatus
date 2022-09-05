@@ -41,10 +41,13 @@ Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 Route::post('/contact/confirm', [ContactController::class, 'contact_confirm'])->name("contact.confirm");
 Route::post('/contact/thanks', [ContactController::class, 'contact_send'])->name("contact.send");
 
-Route::get('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
-Route::post('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
-Route::get('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
-Route::post('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
+
+Route::group(['middleware' => ['auth', 'can:system-only']], function () {
+    Route::get('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
+    Route::post('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
+    Route::get('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
+    Route::post('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
+});
 
 
 

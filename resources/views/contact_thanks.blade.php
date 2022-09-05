@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -31,9 +33,11 @@
     </ul>
   </nav>
 </header>
-
-<h1>お問い合わせありがとうございます</h1>
-
-
+<div class="container">
+  <h1>ご意見いただきありがとうございました</h1>
+  <div class="home">
+    <a href="/home">ホームへ</a>
+  </div>
+</div>
 
 @endsection

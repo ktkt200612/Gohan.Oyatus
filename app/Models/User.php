@@ -42,16 +42,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function getUserName(){
-        return $this->name;
-    }
-    public function getPoint(){
-        return $this->point;
-    }
-    public function getStoreQuantity(){
-        return $this->store_quantity;
-    }
-    public function getMenuQuantity(){
-        return $this->menu_quantity;
-    }
 }

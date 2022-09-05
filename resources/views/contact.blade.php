@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -31,13 +33,12 @@
     </ul>
   </nav>
 </header>
-
-<h1>お問い合わせ・任意アンケート</h1>
+<h1>お問い合わせ・アンケート　※アンケートだけでもぜひお願いします</h1>
   <form action="{{ route('contact.confirm') }}" method="post" >
     @csrf
     <div>
-      <label for="name">お名前</label>
-      <input type="text" name="name" id="name" value="{{ old('name') }}" />
+      <label for="name">ユーザー名 or お名前</label>
+      <input type="text" name="name" id="name" @auth value="<?php $user = Auth::user(); ?>{{ $user->name}}" @endauth value="{{ old('name') }}" />
     </div>
     <div>
       @error('name')
@@ -56,7 +57,7 @@
     </div>
     <div>
       <label for="email">メールアドレス</label>
-      <input type="text" name="email" id="email" value="{{ old('email') }}" />
+      <input type="text" name="email" id="email" @auth value="<?php $user = Auth::user(); ?>{{ $user->email}}"  @endauth value="{{ old('email') }}" />
     </div>
     <div>
       @error('email')

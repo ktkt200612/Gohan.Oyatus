@@ -6,6 +6,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -224,11 +226,11 @@
     <button name="id" value="{{ $form->id }}">編集完了</button>
   </div>
 </form>
-<div class="edit-button">
-  <form method="GET" action="{{ route('store.delete.page') }}">
-  @csrf
-    <button name="id" value="{{ $form->id }}">店舗削除</button>
-  </form>
-</div>
 
+<form method="GET" action="{{ route('store.delete.page') }}">
+@csrf
+  <div class="delete-button">
+    <button name="id" value="{{ $form->id }}">店舗削除</button>
+  </div>
+</form>
 @endsection

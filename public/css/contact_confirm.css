@@ -51,100 +51,87 @@ header {
 }
 
 
+
+
 .title {
-    position: relative;
-    display: inline-block;
-    padding: 0 45px;
-    font-size: 25px;
-    margin: 40px 0 1px 150px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
 }
 
-.title:before,
-.title:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 44px;
-    height: 2px;
-    background-color: black;
-    -webkit-transform: rotate(-60deg);
-    transform: rotate(-60deg);
-}
+.container {
+    width: 80%;
 
-.title:before {
-    left: 0;
-}
-
-.title:after {
-    right: 0;
-}
-
-
-.register-item {
-    margin-left: 110px;
     border: solid;
-    border-color: rgb(222, 222, 181);
+    border-width: 1px;
     border-radius: 10px;
-    width: 82%;
-    padding-top: 51px;
-    padding-left: 17px;
-    background-color: rgb(237, 237, 186);
-
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgb(243, 243, 243);
+    padding-top: 20px;
 }
 
-.item {
-    line-height: 10px;
-    font-weight: bolder;
-}
-
-.required {
-    color: white;
-    background-color: red;
-    margin-left: 9px;
-    padding: 1px 5px 1px 5px;
-    border-radius: 3px;
-    font-size: 13px;
-    font-weight: lighter;
-    vertical-align: 1.3px;
-}
-
-.caution {
-    color: rgb(121, 121, 121);
-    font-size: 15px;
-    font-weight: light;
-}
-
-input {
-    line-height: 25px;
-    font-size: 15px;
-    width: 45%;
-    margin-top: -30px;
-}
-
-select {
-    margin-top: -27px;
-    width: 15%;
-    padding: 6.5px 0 6.5px;
-    font-size: 15px;
-}
-
-input[type=text]:focus {
-    outline: none;
-    border: 1px solid blue;
-    border-radius: 3px;
+.container .item {
+    margin-left: 40px;
 }
 
 
-.genre-top {
-    margin-bottom: -105px;
+span {
+    display: inline-block;
+    width: 27%;
+    font-weight: bold;
+}
+
+.opinion {
+    margin-top: 30px;
+    vertical-align: top;
+    line-height: 8px;
+}
+
+.opinion-ans {
+    margin-top: 15px;
+    line-height: 23px;
+    vertical-align: top;
+    width: 400px;
+    display: inline-block;
+    width: 40%;
+
+}
+
+.review1 {
+    margin-top: 20px;
 }
 
 
 
-
-button {
+.post button {
     padding: 5px 56px;
+    font-size: 87%;
+
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+
+
+
+/* 四角にカーソル当てた時 */
+.post :hover {
+    background: rgb(236, 158, 15);
+    color: white;
+}
+
+
+.back button {
+    padding: 5px 42px;
     font-size: 87%;
 
     background-color: rgb(159, 159, 149);
@@ -162,29 +149,7 @@ button {
 
 
 /* 四角にカーソル当てた時 */
-.register-button :hover {
-    background: rgb(255, 166, 0);
+.back :hover {
+    background: rgb(134, 134, 133);
     color: white;
-}
-
-
-
-.error-message {
-    font-size: 16px;
-    color: #ff7676;
-
-}
-
-
-.opinion {
-    display: block;
-    width: 500px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.opinion:hover {
-    white-space: normal;
-    width: 700px;
 }

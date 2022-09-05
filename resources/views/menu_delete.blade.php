@@ -7,6 +7,8 @@
     <ul>
       <li class="header__nav--list"><a href="/index">店舗検索</a></li>
       <li class="header__nav--list"><a href="/store/register/page">店舗登録</a></li>
+      <li class="header__nav--list"><a href="/point">ユーザーランキング</a></li>
+      <li class="header__nav--list"><a href="/contact">お問い合わせ・アンケート</a></li>
       @guest
       <li class="header__nav--list"><a href="/register">会員登録</a></li>
       <li class="header__nav--list">
@@ -34,17 +36,21 @@
 
 
 
+
+
+<h1 class="delete-title">削除の実行</h1>
 <div class="container">
-  <h1>本当に削除しますか？</h1>
-
-
+  <p class="delete-text">この操作は取り消しできません。<br>本当に削除を実行しますか？</p>
   <form action="{{ route('menu.delete') }}" method="POST">
-    @csrf
-      <input type="hidden"  name="id" value="{{$item->id}}">
-      <button type="submit" name="action" value="post">はい</button><br>
+  @csrf
+    <input type="hidden"  name="id" value="{{$item->id}}">
+    <div class="yes">
+      <button type="submit" name="action" value="post">はい</button>
+    </div>
+    <div class="no">
       <button type="submit" name="action" value="back">戻る</button>
+    </div>
   </form>
-
 </div>
 @endsection
 

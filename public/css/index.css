@@ -271,7 +271,6 @@ button {
 
 }
 
-
 .pagination {
     display: flex;
     justify-content: center;
@@ -280,29 +279,33 @@ button {
     padding-bottom: 20px;
 }
 
-/* 矢印から矢印まで */
+
+
+
+
+
+
 .pagination li {
+    display: block;
+    float: left;
+    color: rgb(121, 121, 8);
     padding: 0px 20px;
     line-height: 45px;
     text-align: center;
     margin-right: 1px;
 }
 
-/* 四角にカーソル当てた時 */
-.pagination li:hover {
+.pagination li a {
+    text-decoration: none;
+    color: rgb(121, 121, 8);
+}
+
+.pagination .active {
     background: rgb(121, 121, 8);
     color: white;
+}
+
+.pagination li:hover:not(.active, .disabled) {
+    background-color: #ddd;
     font-size: 30px;
-}
-
-/* 数字にカーソル当てた時  */
-.page-item :hover {
-    background: rgb(121, 121, 8);
-    color: white;
-}
-
-/* 現在ページ */
-.active {
-    background: rgb(121, 121, 8);
-    color: white;
 }

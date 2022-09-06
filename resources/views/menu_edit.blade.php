@@ -33,6 +33,7 @@
     </ul>
   </nav>
 </header>
+
 <h1 class=title>メニュー編集</h1>
 <form method="POST" action="{{ route('menu.edit') }}" enctype="multipart/form-data" >
   @csrf

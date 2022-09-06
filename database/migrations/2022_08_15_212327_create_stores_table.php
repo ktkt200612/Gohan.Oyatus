@@ -19,7 +19,7 @@ class CreateStoresTable extends Migration
             $table->string('store_name');
             $table->string('kana');
             $table->string('area');
-            $table->string('address');
+            $table->string('store_address');
             $table->string('genre1');
             $table->string('genre2')->nullable();
             $table->string('genre3')->nullable();
@@ -30,9 +30,9 @@ class CreateStoresTable extends Migration
             $table->string('genre8')->nullable();
             $table->string('regular_holiday')->nullable();
             $table->string('business_hours')->nullable();
-            $table->char('phone_number')->nullable();
-            $table->string('outside_photo')->nullable();//画像は後日notnullにする
-            $table->string('inside_photo')->nullable();//画像は後日notnullにする
+            $table->char('store_phone_number')->nullable();
+            $table->string('outside_photo');
+            $table->string('inside_photo');
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable();
         });

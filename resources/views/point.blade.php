@@ -60,11 +60,11 @@
     $ranking .= '</tr>';
     $previous_point = $item['point'];
     $cnt++;
-    
   }
   $ranking .= '</table>';
   echo $ranking;
   ?>
-  <p class="a">※上位5位まで表示しています</p>
+  <p class="explanation-top">※上位5位まで表示しています</p>
+  <p class="explanation-bottom">※ログイン後、ランキングページへアクセスす<br>　ることで、ご自身のポイントが更新されます</p>
 </div>
 @endsection

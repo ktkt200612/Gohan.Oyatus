@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -50,17 +48,13 @@ header {
     font-size: 87%;
 }
 
-
-
 .delete-title {
     font-size: 20px;
     margin-top: 30px;
     margin-left: 400px;
 }
 
-
 .container {
-
     padding-top: 20px;
     width: 40%;
     margin: 0 auto;
@@ -70,16 +64,10 @@ header {
     background-color: rgb(243, 243, 243);
 }
 
-
-
-
-
 .delete-text {
     line-height: 30px;
     text-align: center;
 }
-
-
 
 .yes {
     display: inline-block;
@@ -93,13 +81,9 @@ header {
     color: white;
     border-radius: 5px;
     border: none;
-
-
     margin-left: 112px;
     margin-top: 10px;
 }
-
-
 
 .yes button:hover {
     background: rgb(230, 77, 0);
@@ -119,9 +103,6 @@ header {
     border-radius: 5px;
     border: none;
 }
-
-
-
 
 .no button:hover {
     background-color: rgb(142, 142, 134);

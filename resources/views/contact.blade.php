@@ -33,6 +33,7 @@
     </ul>
   </nav>
 </header>
+
 <h1 class="title">お問い合わせ・アンケート<br>※アンケートだけでもぜひお願致します</h1>
 <div class="container">
   <form action="{{ route('contact.confirm') }}" method="post" >
@@ -123,6 +124,4 @@
   <script src="{{ asset('js/contact.js') }}"></script>
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </div>
-
-
 @endsection

@@ -2,7 +2,6 @@
 
 @section('main')
 <link rel="stylesheet" href="css/login.css">
-
 <header>
     <a href="/home"><h1 class = "header__title">Gohan.<br>Oyatsu</h1></a>
     <nav class="header_nav">

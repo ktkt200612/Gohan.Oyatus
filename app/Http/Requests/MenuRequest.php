@@ -46,6 +46,5 @@ class MenuRequest extends FormRequest
         $this->merge(['kana'=> mb_convert_kana($this->kana, 'asHc')]);
         $this->merge(['limited'=> mb_convert_kana($this->limited, 'as')]);
         $this->merge(['search_word'=> mb_convert_kana($this->search_word, 'as')]);
-
     }
 }

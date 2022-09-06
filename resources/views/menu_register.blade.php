@@ -33,6 +33,7 @@
     </ul>
   </nav>
 </header>
+
 <h1 class="title">メニュー登録</h1>
 <form method="POST" action="{{ route('menu.register') }}" enctype="multipart/form-data" >
 @csrf
@@ -64,5 +65,4 @@
     <button type="submit"  name="store_id" value="{{ $store_id }}">登録</button>
   </div>
 </form>
-
 @endsection

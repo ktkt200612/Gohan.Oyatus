@@ -19,10 +19,9 @@ class StoreController extends Controller
     {   
         unset($request['_token']);
         $store= Store::registerStore($request); 
-        // 該当の店舗詳細画面に戻る
         $form=Store::where('id',$store->id)->first();
         $items=Menu::where('store_id',$store->id)->orderBy("kana","asc")->get();
-        $request->session()->regenerateToken(); //二重登録防止
+        $request->session()->regenerateToken();
         return view('store' ,['form'=> $form,'items'=> $items]);
     }
     
@@ -61,7 +60,6 @@ class StoreController extends Controller
             Store::editStore4($request); 
         }
 
-        // 該当の店舗詳細画面に戻る
         $form=Store::where('id',$request->id)->first();
         $items=Menu::where('store_id',$request->id)->orderBy("kana","asc")->get();
         

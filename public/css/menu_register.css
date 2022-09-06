@@ -24,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -48,7 +47,6 @@ header {
     font-weight: lighter;
     font-size: 87%;
 }
-
 
 .title {
     position: relative;
@@ -79,25 +77,21 @@ header {
     right: 0;
 }
 
-
 .register-item {
     margin-left: 110px;
     border: solid;
     border-radius: 10px;
     border-color: rgb(222, 222, 181);
-    ;
     width: 82%;
     padding-top: 51px;
     padding-left: 17px;
     background-color: rgb(237, 237, 186);
-
 }
 
 .item {
     line-height: 10px;
     font-weight: bolder;
 }
-
 
 .required {
     color: white;
@@ -115,7 +109,6 @@ header {
     font-size: 15px;
     font-weight: light;
 }
-
 
 input {
     line-height: 25px;
@@ -137,9 +130,6 @@ select {
     font-size: 15px;
 }
 
-
-
-
 button {
     padding: 5px 56px;
     font-size: 87%;
@@ -154,15 +144,12 @@ button {
     margin-top: 10px;
 }
 
-/* 四角にカーソル当てた時 */
 .register-button :hover {
     background: rgb(255, 166, 0);
     color: white;
 }
 
-
 .error-message {
     font-size: 16px;
     color: #ff7676;
-
 }

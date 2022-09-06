@@ -95,7 +95,7 @@
       </tr>
       @foreach ($forms as $form)
         <tr>
-          <td scope="row"><input type="hidden" name="id" value="{{ $form->id }}">{{ $form->id }}</td>
+          <td>{{ $form->id }}</td>
           <td>{{ $form->name }}</td>
           <td>
             @if ($form->gender == '1')
@@ -155,8 +155,5 @@
       @endforeach
     </table>
   </div>
-
-
-
 </div>
 @endsection

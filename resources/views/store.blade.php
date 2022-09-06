@@ -34,14 +34,12 @@
   </nav>
 </header>
 
-
-
 <div class="container">
   <div class="wrapper-top">
     <div class="store-name">{{ $form->store_name }}</div>
     <div class="store">
-      <div class="address"><span class="item">住所</span>：{{ $form->address }}</div>
-      <div class="number"><span class="item">電話番号</span>：{{ $form->phone_number }}</div>
+      <div class="address"><span class="item">住所</span>：{{ $form->store_address }}</div>
+      <div class="number"><span class="item">電話番号</span>：{{ $form->store_phone_number }}</div>
       <div class="genre"><span class="item">ジャンル</span>：{{ $form->genre1 }} @if(!empty( $form->genre2 ))   /{{ $form->genre2 }} @endif @if(!empty( $form->genre3 ))   /{{ $form->genre3 }} @endif @if(!empty( $form->genre4 ))   /{{ $form->genre4 }} @endif @if(!empty( $form->genre5 ))   /{{ $form->genre5 }} @endif @if(!empty( $form->genre6 ))   /{{ $form->genre6 }} @endif @if(!empty( $form->genre7 ))   /{{ $form->genre7 }} @endif @if(!empty( $form->genre8 ))   /{{ $form->genre8 }} @endif
       </div>
       <div class="hours"><span class="item">営業時間</span>：{{ $form->business_hours }}</div>
@@ -56,7 +54,6 @@
       </form>
     </div>
   </div>
-
   <div class="wrapper-bottom">
     <div class="title">〜 Menu 〜</div>
     <form action="{{ route('menu.register.page') }}" method="get">

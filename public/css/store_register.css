@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -49,7 +47,6 @@ header {
     font-weight: lighter;
     font-size: 87%;
 }
-
 
 .title {
     position: relative;
@@ -80,7 +77,6 @@ header {
     right: 0;
 }
 
-
 .register-item {
     margin-left: 110px;
     border: solid;
@@ -90,7 +86,6 @@ header {
     padding-top: 51px;
     padding-left: 17px;
     background-color: rgb(237, 237, 186);
-
 }
 
 .item {
@@ -135,18 +130,13 @@ input[type=text]:focus {
     border-radius: 3px;
 }
 
-
 .genre-top {
     margin-bottom: -105px;
 }
 
-
-
-
 button {
     padding: 5px 56px;
     font-size: 87%;
-
     background-color: rgb(159, 159, 149);
     cursor: pointer;
     color: white;
@@ -158,19 +148,12 @@ button {
     margin-top: 10px;
 }
 
-
-
-
-/* 四角にカーソル当てた時 */
 .register-button :hover {
     background: rgb(255, 166, 0);
     color: white;
 }
 
-
-
 .error-message {
     font-size: 16px;
     color: #ff7676;
-
 }

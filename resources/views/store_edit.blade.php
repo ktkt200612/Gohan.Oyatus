@@ -32,6 +32,7 @@
     </ul>
   </nav>
 </header>
+
 <h1 class="title">店舗編集</h1>
 <form method="POST" action="{{ route('store.edit') }}" enctype="multipart/form-data" >
   @csrf
@@ -95,8 +96,8 @@
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">住所<span class="required">必須</span></div>
-    <input type="text" name="address" value = {{ $form->address }}>
-    @error('address')
+    <input type="text" name="store_address" value = {{ $form->store_address }}>
+    @error('store_address')
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">ジャンル<span class="required">必須</span></div>
@@ -215,9 +216,9 @@
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">電話番号 <span class="caution">※ハイフン無しで数字のみ</span></div>
-    <input type="text" name="phone_number" value = {{ $form->phone_number }} >
-    @if($errors->has('phone_number'))
-			@foreach($errors->get('phone_number') as $message)
+    <input type="text" name="store_phone_number" value = {{ $form->store_phone_number }} >
+    @if($errors->has('store_phone_number'))
+			@foreach($errors->get('store_phone_number') as $message)
 				<span class="error-message">{{$message}}</span>
 			@endforeach
 		@endif 

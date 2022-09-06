@@ -21,17 +21,13 @@ class MenuController extends Controller
     public function menu_register(MenuRequest $request) //メニュー登録
     {   
         unset($request['_token']);
-        $form = $request->all()+ ['user_id' => Auth::id()]; //画像以外のデータ
-        // 画像フォームでリクエストした画像を取得
+        $form = $request->all()+ ['user_id' => Auth::id()];
         $photo = $request->file('photo');
-        // storage > public > img配下に画像が保存される
-        $photo = $photo->store('img','public'); //ここのstoreは店舗ではない
-        // DBに登録する処理
+        $photo = $photo->store('img','public');
         $menu = Menu::create([
             'photo' => $photo,
         ]+$form);
 
-        // 該当の店舗詳細画面に戻る
         $form=Store::where('id',$menu->store_id)->first();
         $items=Menu::where('store_id',$menu->store_id)->orderBy("kana","asc")->get();
         $request->session()->regenerateToken();
@@ -65,7 +61,6 @@ class MenuController extends Controller
             Menu::where('id',$request->id)->update($form);
         }
 
-        // 該当の店舗詳細画面に戻る
         $form=Store::where('id',$menu->store_id)->first();
         $items=Menu::where('store_id',$menu->store_id)->orderBy("kana","asc")->get();
         
@@ -93,6 +88,5 @@ class MenuController extends Controller
         Menu::find($request->id)->delete();
         $items=Menu::where('store_id',$form->id)->orderBy("kana","asc")->get();
         return view('store',['form'=> $form,'items'=> $items]);
-    }
-    
+    }   
 }

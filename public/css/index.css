@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -61,7 +59,6 @@ header {
     background-color: rgb(250, 249, 249);
 }
 
-
 .area,
 .genre,
 .word,
@@ -69,8 +66,6 @@ header {
     line-height: 25px;
     display: inline-block;
 }
-
-
 
 select {
     padding: 5px 10px;
@@ -93,8 +88,6 @@ button {
     cursor: pointer;
 }
 
-
-
 .button {
     margin-left: 100px;
     line-height: 30px;
@@ -111,8 +104,6 @@ button {
     border: none;
 }
 
-
-/* 四角にカーソル当てた時 */
 .button :hover {
     background: rgb(255, 166, 0);
     color: white;
@@ -128,21 +119,13 @@ button {
     border: none;
 }
 
-
-
-
-
 .page {
     margin-left: 10px;
 
 }
 
-.container {}
-
 .form {
-
     margin-bottom: 16px;
-
 }
 
 .container-button {
@@ -157,10 +140,7 @@ button {
     box-shadow: 0px 0px 8px 0px rgb(185, 185, 185);
     padding-top: 20px;
     padding-bottom: 17px;
-
-
 }
-
 
 .photo {
     display: inline-block;
@@ -170,8 +150,6 @@ button {
     margin-right: 6px;
 }
 
-.inside {}
-
 .information {
     display: inline-block;
     width: 40%;
@@ -179,12 +157,6 @@ button {
     padding-top: 3px;
     text-align: left;
     padding-left: 30px;
-
-
-
-
-
-
 }
 
 .store-name {
@@ -192,7 +164,6 @@ button {
     margin-bottom: 20px;
     line-height: 30px;
     word-break: break-all;
-
 }
 
 .store-name:hover {
@@ -209,19 +180,16 @@ button {
     font-size: 15px;
     line-height: 18px;
     color: rgb(55, 55, 55);
-
 }
 
 .holiday {
     font-size: 15px;
     color: rgb(55, 55, 55);
-
 }
 
 .hours {
     font-size: 15px;
     color: rgb(55, 55, 55);
-
 }
 
 .number {
@@ -230,7 +198,6 @@ button {
 }
 
 .address-item {
-
     width: 90%;
     vertical-align: top;
     margin-bottom: 14px;
@@ -238,21 +205,17 @@ button {
 }
 
 .genre-item {
-
     width: 90%;
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
-
 }
 
 .holiday-item {
-
     width: 90%;
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
-
 }
 
 .hours-item {
@@ -260,7 +223,6 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
-
 }
 
 .number-item {
@@ -268,7 +230,6 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
-
 }
 
 .pagination {
@@ -278,12 +239,6 @@ button {
     padding-top: 10px;
     padding-bottom: 20px;
 }
-
-
-
-
-
-
 
 .pagination li {
     display: block;

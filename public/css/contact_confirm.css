@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -50,9 +48,6 @@ header {
     font-size: 87%;
 }
 
-
-
-
 .title {
     margin-top: 40px;
     text-align: center;
@@ -61,7 +56,6 @@ header {
 
 .container {
     width: 80%;
-
     border: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -76,14 +70,11 @@ header {
     margin-left: 40px;
 }
 
-
 span {
     display: inline-block;
     width: 27%;
     font-weight: bold;
 }
-
-
 
 .opinion {
     margin-top: 30px;
@@ -98,19 +89,15 @@ span {
     width: 400px;
     display: inline-block;
     word-break: break-all;
-
 }
 
 .review1 {
     margin-top: 20px;
 }
 
-
-
 .post button {
     padding: 5px 56px;
     font-size: 87%;
-
     background-color: rgb(255, 166, 0);
     cursor: pointer;
     color: white;
@@ -119,23 +106,16 @@ span {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-
 }
 
-
-
-
-/* 四角にカーソル当てた時 */
 .post :hover {
     background: rgb(236, 158, 15);
     color: white;
 }
 
-
 .back button {
     padding: 5px 42px;
     font-size: 87%;
-
     background-color: rgb(159, 159, 149);
     cursor: pointer;
     color: white;
@@ -147,10 +127,6 @@ span {
     margin-top: 10px;
 }
 
-
-
-
-/* 四角にカーソル当てた時 */
 .back :hover {
     background: rgb(134, 134, 133);
     color: white;

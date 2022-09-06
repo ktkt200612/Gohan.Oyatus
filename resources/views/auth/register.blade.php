@@ -2,7 +2,6 @@
 
 @section('main')
 <link rel="stylesheet" href="css/register.css">
-
     <header>
         <a href="/home"><h1 class = "header__title">Gohan.<br>Oyatsu</h1></a>
         <nav class="header_nav">
@@ -14,6 +13,7 @@
             </ul>
         </nav>
     </header>
+    
     <div class="container">
         <p class="title">会員登録</p>
 

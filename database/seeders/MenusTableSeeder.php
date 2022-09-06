@@ -20,13 +20,15 @@ class MenusTableSeeder extends Seeder
             'menu_name' => 'サンドウィッチ',
             'kana' => 'さんどうぃっち',
             'search_word' => 'サンドイッチ・パン',
+            'photo' => 'img/menu1.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
-            'user_id' => '2',
+            'user_id' => '1',
             'store_id' => '2',
             'menu_name' => 'スパイスカレー',
             'kana' => 'すぱいすかれー',
+            'photo' => 'img/menu1.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
@@ -34,41 +36,188 @@ class MenusTableSeeder extends Seeder
             'store_id' => '3',
             'menu_name' => 'スペシャル海鮮丼',
             'kana' => 'すぺしゃるかいせんどん',
-            'limited' => 'マグロ、サーモン、いくら',
+            'limited' => '土曜限定',
             'search_word' => '魚・海の幸',
+            'photo' => 'img/menu1.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
-            'user_id' => '3',
+            'user_id' => '1',
             'store_id' => '4',
             'menu_name' => '桃のショートケーキ',
             'kana' => 'もものしょーとけーき',
             'limited' => '7月限定',
+            'photo' => 'img/menu1.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
-            'user_id' => '2',
-            'store_id' => '3',
+            'user_id' => '1',
+            'store_id' => '5',
             'menu_name' => 'ビール',
             'kana' => 'びーる',
-            'limited' => 'キリン',
+            'search_word' => 'キリン',
+            'photo' => 'img/menu2.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
-            'user_id' => '2',
-            'store_id' => '3',
+            'user_id' => '1',
+            'store_id' => '6',
             'menu_name' => 'ビール',
             'kana' => 'びーる',
-            'limited' => 'アサヒ',
+            'search_word' => 'アサヒ・酒',
+            'photo' => 'img/menu2.jpg',
         ];
         DB::table('menus')->insert($param);
         $param = [
-            'user_id' => '3',
-            'store_id' => '4',
+            'user_id' => '1',
+            'store_id' => '8',
             'menu_name' => 'つけ麺',
             'kana' => 'つけめん',
             'limited' => '数量限定',
             'search_word' => 'こってり',
+            'photo' => 'img/menu2.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '1',
+            'menu_name' => '醤油ラーメン',
+            'kana' => 'しょうゆらーめん',
+            'limited' => '1日10食限定',
+            'search_word' => 'こってり・湯浅醤油',
+            'photo' => 'img/menu2.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '2',
+            'menu_name' => '刺身定食',
+            'kana' => 'さしみていしょく',
+            'search_word' => 'マグロ・アジ',
+            'photo' => 'img/menu3.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '3',
+            'menu_name' => 'カツ丼',
+            'kana' => 'かつどん',
+            'limited' => '平日限定・5月限定 ',
+            'search_word' => '豚・揚げ物',
+            'photo' => 'img/menu3.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '4',
+            'menu_name' => '梅おにぎり',
+            'kana' => 'うめおにぎり',
+            'search_word' => 'こめ・米',
+            'photo' => 'img/menu3.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '5',
+            'menu_name' => 'ブラックつけ麺',
+            'kana' => 'ぶらっくつけめん',
+            'limited' => '数量限定',
+            'search_word' => 'あっさり',
+            'photo' => 'img/menu3.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '6',
+            'menu_name' => 'チーズケーキ',
+            'kana' => 'ちーずけーき',
+            'search_word' => '甘い・おやつ',
+            'photo' => 'img/menu3.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '7',
+            'menu_name' => 'プリンアラモード',
+            'kana' => 'ぷりんあらもーど',
+            'limited' => '1日10食限定',
+            'search_word' => '昔ながら',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '2',
+            'store_id' => '8',
+            'menu_name' => 'プリンアラモード',
+            'kana' => 'ぷりんあらもーど',
+            'limited' => '1日10食限定',
+            'search_word' => '昔ながら',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '3',
+            'store_id' => '1',
+            'menu_name' => '桃のタルト',
+            'kana' => 'もものたると',
+            'limited' => '夏季限定',
+            'search_word' => '甘い・おやつ',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '4',
+            'store_id' => '1',
+            'menu_name' => 'つけ麺',
+            'kana' => 'つけめん',
+            'limited' => '数量限定',
+            'search_word' => 'こってり',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '5',
+            'store_id' => '2',
+            'menu_name' => 'てっさ',
+            'kana' => 'てっさ',
+            'search_word' => 'ふぐ',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '6',
+            'store_id' => '2',
+            'menu_name' => 'ももの焼き鳥',
+            'kana' => 'もものやきとり',
+            'search_word' => '地鶏',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '3',
+            'store_id' => '11',
+            'menu_name' => '味噌餃子',
+            'kana' => 'みそぎょうざ',
+            'search_word' => '中華',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '5',
+            'store_id' => '10',
+            'menu_name' => 'ナポリタン',
+            'kana' => 'なぽりたん',
+            'search_word' => 'パスタ・ケチャップ',
+            'photo' => 'img/menu4.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '6',
+            'store_id' => '9',
+            'menu_name' => 'こころの焼き鳥',
+            'kana' => 'こころのやきとり',
+            'search_word' => '地鶏',
+            'photo' => 'img/menu3.jpg',
         ];
         DB::table('menus')->insert($param);
     }

@@ -57,14 +57,11 @@
       <label class="opinion-ans">{{ $form['email']  }}
       <input type="hidden" name="email" value="{{ $form['email'] }}" />
     </div>
-    
     <div class="item">
       <span class=opinion>・ご意見</span>
       <label class="opinion-ans">{{ $form['opinion']  }}</label>
       <input type="hidden" name="opinion" value="{{ $form['opinion'] }}">
     </div>
-    
-
       <div class="item">
         <span class=review1>・機能充実度</span>
         @if ($form['review1'] === '0')
@@ -125,8 +122,4 @@
     </div>
   </form>
 </div>
-
-
-
-
 @endsection

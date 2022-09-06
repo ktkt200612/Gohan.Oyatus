@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 a:not(.header__title) {
     text-decoration: none;
     color: rgb(121, 121, 8);
@@ -53,9 +52,7 @@ header {
     font-size: 87%;
 }
 
-
 .container {
-
     padding-bottom: 220px;
     margin-top: 10px;
     background-color: white;
@@ -84,7 +81,6 @@ header {
 .email {
     padding: 10px 220px 10px 20px;
 }
-
 
 input:focus {
     outline: none;

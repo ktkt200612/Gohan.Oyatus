@@ -33,11 +33,11 @@
     </ul>
   </nav>
 </header>
+
 <div class="container">
   <h1>ご意見いただきありがとうございました</h1>
   <div class="home">
     <a href="/home">ホームへ</a>
   </div>
 </div>
-
 @endsection

@@ -29,37 +29,21 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
+//全ユーザーアクセス可能
 Route::get('/home', [SearchController::class, 'home'])->name("home");
 Route::get('/index', [SearchController::class, 'index'])->name("index");
-Route::post('/index', [SearchController::class, 'index'])->name("index"); //検索リセットボタン用
-Route::get('/search', [SearchController::class, 'search'])->name("search");//検索後の、ページネーション時の検索結果の表示
+Route::post('/index', [SearchController::class, 'index'])->name("index");
+Route::get('/search', [SearchController::class, 'search'])->name("search");
 Route::post('/search', [SearchController::class, 'search'])->name("search");
 Route::get('/store', [StoreController::class, 'store'])->name("store");
-
-
 Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 Route::post('/contact/confirm', [ContactController::class, 'contact_confirm'])->name("contact.confirm");
 Route::post('/contact/thanks', [ContactController::class, 'contact_send'])->name("contact.send");
-
-
-Route::group(['middleware' => ['auth', 'can:system-only']], function () {
-    Route::get('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
-    Route::post('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
-    Route::get('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
-    Route::post('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
-});
-
-
-
-
 Route::get('/point', [PointController::class, 'point'])->name("point");
+Route::get('/login/twitter', [TwitterController::class, 'redirectToProvider'])->name("twitter.login");
+Route::get('/login/twitter/callback',[TwitterController::class, 'handleProviderCallback']);
 
-
-
-
-
-
-
+//会員登録済みのユーザーのみアクセス可能
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/store/register/page', [StoreController::class, 'store_register_page'])->name("store.register.page");
     Route::post('/store/register', [StoreController::class, 'store_register'])->name("store.register");
@@ -75,5 +59,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::post('/menu/delete', [MenuController::class, 'menu_delete'])->name("menu.delete");
 });
 
-Route::get('/login/twitter', [TwitterController::class, 'redirectToProvider'])->name("twitter.login");
-Route::get('/login/twitter/callback',[TwitterController::class, 'handleProviderCallback']);
+//管理者権限のある者のみアクセス可能
+Route::group(['middleware' => ['auth', 'can:system-only']], function () {
+    Route::get('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
+    Route::post('/contact/management', [ContactController::class, 'contact_management'])->name("contact.management");
+    Route::get('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
+    Route::post('/contact/search', [ContactController::class, 'contact_search'])->name("contact.search");
+});

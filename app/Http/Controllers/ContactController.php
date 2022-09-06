@@ -14,7 +14,6 @@ class ContactController extends Controller
         return view('contact');
     }
 
-
     public function contact_confirm(ContactRequest $request) //お問い合わせ内容確認ページへ
     {   
         unset($request['_token']);
@@ -34,15 +33,11 @@ class ContactController extends Controller
         return view('contact_thanks');
     }
 
-
     public function contact_management() //検索ページ表示
     {
-
-        $result = Contact::sortable()->paginate(5);
+        $result = Contact::sortable("id","asc")->paginate(10);
         return view('contact_management', ['forms' => $result]);
-
     }
-
 
     public function contact_search(Request $request) //検索機能
     {
@@ -52,25 +47,25 @@ class ContactController extends Controller
                 $result = Contact::where('name', 'LIKE', "%{$request->name}%")
                 ->whereDate('created_at', '<=', "{$request->created_to}")
                 ->where('email', 'LIKE', "%{$request->email}%")
-                ->sortable()->paginate(10);
+                ->sortable("id","asc")->paginate(10);
                 return view('contact_management', ['forms' => $result]);
             } elseif ($request->created_from !== null && $request->created_to == null) {
                 $result = Contact::where('name', 'LIKE', "%{$request->name}%")
                 ->whereDate('created_at', '>=', "{$request->created_from}")
                 ->where('email', 'LIKE', "%{$request->email}%")
-                ->sortable()->paginate(10);
+                ->sortable("id","asc")->paginate(10);
                 return view('contact_management', ['forms' => $result]);
             } elseif ($request->created_from == null && $request->created_to == null) {
                 $result = Contact::where('name', 'LIKE', "%{$request->name}%")
                 ->where('email', 'LIKE', "%{$request->email}%")
-                ->sortable()->paginate(10);
+                ->sortable("id","asc")->paginate(10);
                 return view('contact_management', ['forms' => $result]);
             } else {
                 $result = Contact::where('name', 'LIKE', "%{$request->name}%")
                 ->whereDate('created_at', '<=', "{$request->created_to}")
                 ->whereDate('created_at', '>=', "{$request->created_from}")
                 ->where('email', 'LIKE', "%{$request->email}%")
-                ->sortable()->paginate(10);
+                ->sortable("id","asc")->paginate(10);
                 return view('contact_management', ['forms' => $result]);
             }
         }
@@ -79,20 +74,20 @@ class ContactController extends Controller
             ->where('gender', $request->gender)
             ->whereDate('created_at', '<=', "{$request->created_to}")
             ->where('email', 'LIKE', "%{$request->email}%")
-            ->sortable()->paginate(10);
+            ->sortable("id","asc")->paginate(10);
             return view('contact_management', ['forms' => $result]);
         } elseif ($request->created_from !== null && $request->created_to == null) {
             $result = Contact::where('name', 'LIKE', "%{$request->name}%")
             ->where('gender', $request->gender)
             ->whereDate('created_at', '>=', "{$request->created_from}")
             ->where('email', 'LIKE', "%{$request->email}%")
-            ->sortable()->paginate(10);
+            ->sortable("id","asc")->paginate(10);
             return view('contact_management', ['forms' => $result]);
         } elseif ($request->created_from == null && $request->created_to == null) {
             $result = Contact::where('name', 'LIKE', "%{$request->name}%")
             ->where('gender', $request->gender)
             ->where('email', 'LIKE', "%{$request->email}%")
-            ->sortable()->paginate(10);
+            ->sortable("id","asc")->paginate(10);
             return view('contact_management', ['forms' => $result]);
         } else {
             $result = Contact::where('name', 'LIKE', "%{$request->name}%")
@@ -100,7 +95,7 @@ class ContactController extends Controller
             ->whereDate('created_at', '<=', "{$request->created_to}")
             ->whereDate('created_at', '>=', "{$request->created_from}")
             ->where('email', 'LIKE', "%{$request->email}%")
-            ->sortable()->paginate(10);
+            ->sortable("id","asc")->paginate(10);
             return view('contact_management', ['forms' => $result]);
         }
     }

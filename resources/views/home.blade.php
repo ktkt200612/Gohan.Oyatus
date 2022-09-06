@@ -33,6 +33,7 @@
     </ul>
   </nav>
 </header>
+
 <div class="about">
   <p class="about__title">和歌山県内の飲食店を盛り上げよう</p>
   <div class="pickup">
@@ -41,6 +42,7 @@
     <p class="pickup__text">お店探しにもぜひご利用下さい！！</p>
   </div>
 </div>
+
 <div class="img">
   <img src="image/home1.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />
   <img src="image/home5.jpg" alt="img" width="33%" height="400" onerror="this.src='image/noimage.png';this.onerror=false;" />

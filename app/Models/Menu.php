@@ -13,7 +13,6 @@ class Menu extends Model
         'id'
     ];
 
-    
     public function user(){ 
         return $this->belongsTo('App\Models\User');
     }

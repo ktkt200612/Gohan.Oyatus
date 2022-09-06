@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -50,15 +48,6 @@ header {
     font-size: 87%;
 }
 
-
-
-
-
-
-.container {}
-
-
-
 .wrapper-top {
     width: 80%;
     margin: 0 auto;
@@ -66,13 +55,11 @@ header {
 }
 
 .store {
-
     border: solid;
     border-color: rgb(222, 222, 181);
     line-height: 45px;
     padding: 0 10px;
     background-color: beige;
-
 }
 
 .item {
@@ -86,7 +73,6 @@ header {
 }
 
 .store-name {
-
     font-size: 27px;
     word-break: break-all;
 }
@@ -95,21 +81,14 @@ header {
     display: inline-block;
 }
 
-.hours {}
-
-
 .holiday {
     display: inline-block;
 }
-
-.genre {}
-
 
 .number {
     display: inline-block;
     margin-left: 30px;
 }
-
 
 .store-edit-button {
     margin-top: -25px;
@@ -117,8 +96,6 @@ header {
     display: block;
 }
 
-
-/* 四角にカーソル当てた時 */
 .store-edit-button :hover {
     background: rgb(134, 134, 133);
     color: white;
@@ -127,7 +104,6 @@ header {
 .wrapper-bottom {
     width: 80%;
     margin: auto;
-
 }
 
 .title {
@@ -135,17 +111,12 @@ header {
     text-align: center;
     line-height: 40px;
     margin-top: 110px;
-
 }
 
 .menu-register-button {
     margin-left: 900px;
     line-height: 30px;
-    ;
-
 }
-
-
 
 .menu-register-button button {
     background-color: rgb(255, 166, 0);
@@ -162,12 +133,10 @@ header {
     background-color: rgb(222, 222, 181);
     padding-top: 30px;
     box-shadow: 0px 0px 8px 0px rgb(185, 185, 185);
-
 }
 
 table td {
     margin-left: 103px;
-
 }
 
 .photo {
@@ -175,7 +144,6 @@ table td {
     line-height: 10px;
     border: solid;
     border-color: aliceblue;
-
 }
 
 .menu-name {
@@ -187,7 +155,6 @@ table td {
     display: block;
     margin-top: 15px;
     word-break: break-all;
-
 }
 
 .limited {
@@ -198,7 +165,6 @@ table td {
     margin-bottom: 40px;
     margin-top: 12px;
     word-break: break-all;
-
 }
 
 .menu-edit-button {
@@ -217,5 +183,4 @@ button {
     color: white;
     border-radius: 5px;
     border: none;
-
 }

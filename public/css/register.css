@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 a:not(.header__title) {
     text-decoration: none;
     color: rgb(121, 121, 8);
@@ -28,7 +27,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -54,7 +52,6 @@ header {
 }
 
 .container {
-
     padding-top: 10px;
     padding-bottom: 70px;
     background-color: white;
@@ -76,19 +73,16 @@ header {
     line-height: 30px;
 }
 
-
 .wrapper {
     text-align: center;
 }
 
 .name {
     padding: 10px 220px 10px 20px;
-
 }
 
 .email {
     padding: 10px 220px 10px 20px;
-
 }
 
 .password {
@@ -128,9 +122,7 @@ header {
 .register:hover {
     background: rgb(236, 158, 15);
     color: white;
-
 }
-
 
 input:focus {
     outline: none;

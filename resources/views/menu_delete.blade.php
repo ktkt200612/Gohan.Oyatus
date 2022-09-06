@@ -34,10 +34,6 @@
   </nav>
 </header>
 
-
-
-
-
 <h1 class="delete-title">削除の実行</h1>
 <div class="container">
   <p class="delete-text">この操作は取り消しできません。<br>本当に削除を実行しますか？</p>
@@ -53,5 +49,3 @@
   </form>
 </div>
 @endsection
-
-      

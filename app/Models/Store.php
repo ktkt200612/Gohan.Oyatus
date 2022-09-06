@@ -35,13 +35,13 @@ class Store extends Model
                 ->orWhere('genre6', 'LIKE', "%{$request->genre}%")
                 ->orWhere('genre7', 'LIKE', "%{$request->genre}%")
                 ->orWhere('genre8', 'LIKE', "%{$request->genre}%");
-        }) //ジャンル1〜8のorWhere
+        })
         ->where(function($query) use ($request) {
             $query->where('store_name', 'LIKE', "%{$request->search_word}%")
         ->orWhereHas('menus', function($query) use ($request) {
             $query->where('search_word', 'LIKE', "%{$request->search_word}%")
         ->orWhere('menu_name', 'LIKE', "%{$request->search_word}%");
-        });}) //whereHasでMenusテーブルから検索している
+        });})
         ->orderBy("kana","asc")
         ->paginate(5);
         return $result;
@@ -81,7 +81,7 @@ class Store extends Model
         ->orWhereHas('menus', function($query) use ($request) {
             $query->where('search_word', 'LIKE', "%{$request->search_word}%")
         ->orWhere('menu_name', 'LIKE', "%{$request->search_word}%");
-        });}) //whereHasでMenusテーブルから検索している
+        });})
         ->orderBy("kana","asc")
         ->paginate(5);
         return $result;
@@ -94,7 +94,7 @@ class Store extends Model
         ->orWhereHas('menus', function($query) use ($request) {
             $query->where('search_word', 'LIKE', "%{$request->search_word}%")
         ->orWhere('menu_name', 'LIKE', "%{$request->search_word}%");
-        });}) //whereHasでMenusテーブルから検索している
+        });})
         ->orderBy("kana","asc")
         ->paginate(5);
         return $result;
@@ -116,7 +116,7 @@ class Store extends Model
             $query->where('store_name', 'LIKE', "%{$request->search_word}%")
         ->orWhereHas('menus', function($query) use ($request) {
             $query->where('search_word', 'LIKE', "%{$request->search_word}%")->orWhere('menu_name', 'LIKE', "%{$request->search_word}%");
-        });}) //whereHasでMenusテーブルから検索している
+        });})
         ->orderBy("kana","asc")
         ->paginate(5);
         return $result;
@@ -146,18 +146,13 @@ class Store extends Model
         return $result;
     }
 
-
-
     public static function registerStore(StoreRequest $request) //店舗登録関数
     {
-        $form = $request->all()+ ['user_id' => Auth::id()]; //画像以外のデータ
-        // 画像フォームでリクエストした画像を取得
+        $form = $request->all()+ ['user_id' => Auth::id()];
         $outside = $request->file('outside_photo');
         $inside = $request->file('inside_photo');
-        // storage > public > img配下に画像が保存される
         $outside = $outside->store('img','public');
-        $inside = $inside->store('img','public'); //ここのstoreは店舗ではない
-        // DBに登録する処理
+        $inside = $inside->store('img','public');
         $store = Store::create([
             'outside_photo' => $outside,
             'inside_photo' => $inside,
@@ -170,7 +165,6 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-
         $outside = $request->file('outside_photo');
         $inside = $request->file('inside_photo');
         $outside = $outside->store('img','public');
@@ -186,7 +180,6 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-
         $outside = $request->file('outside_photo');
         $outside = $outside->store('img','public');
         Store::where('id',$request->id)->update([
@@ -199,7 +192,6 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-
         $inside = $request->file('inside_photo');
         $inside = $inside->store('img','public'); 
         Store::where('id',$request->id)->update([
@@ -212,7 +204,6 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-
         Store::where('id',$request->id)->update($form);
     }
 }

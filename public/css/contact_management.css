@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -58,7 +56,6 @@ header {
 
 .container {
     width: 90%;
-
     border: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -75,7 +72,6 @@ label {
     font-weight: bold;
     padding-left: 30px;
 }
-
 
 input[type="text"] {
     width: 20%;
@@ -97,7 +93,6 @@ input[type="radio"] {
     transform: scale(2.0);
     margin-top: 0px;
     accent-color: rgb(255, 166, 0);
-
     margin-left: 20px;
 }
 
@@ -111,12 +106,9 @@ input[type="radio"] {
     line-height: 1px;
 }
 
-
-
 .post button {
     padding: 5px 56px;
     font-size: 87%;
-
     background-color: rgb(255, 166, 0);
     cursor: pointer;
     color: white;
@@ -128,20 +120,14 @@ input[type="radio"] {
     margin-bottom: 8px;
 }
 
-
-
-
-/* 四角にカーソル当てた時 */
 .post :hover {
     background: rgb(236, 158, 15);
     color: white;
 }
 
-
 .back button {
     padding: 5px 42px;
     font-size: 87%;
-
     background-color: rgb(159, 159, 149);
     cursor: pointer;
     color: white;
@@ -152,29 +138,16 @@ input[type="radio"] {
     margin-bottom: 30px;
 }
 
-
-
-
-/* 四角にカーソル当てた時 */
 .back :hover {
     background: rgb(134, 134, 133);
     color: white;
 }
 
-
-
-
-
-
 table {
     width: 99%;
     text-align: left;
     margin: 0 auto;
-
-
 }
-
-
 
 td {
     vertical-align: top;
@@ -183,15 +156,9 @@ td {
     padding-top: 10px;
 }
 
-
-
-
-
 th {
     border-bottom: 1px solid #000;
-
 }
-
 
 .id {
     width: 4%;
@@ -207,13 +174,10 @@ th {
 
 .email {
     width: 20%;
-
 }
 
 .opinion {
     width: 30%;
-
-
 }
 
 .review1 {
@@ -228,36 +192,18 @@ th {
     width: 10%;
 }
 
-
-
 .form-opinion {
     display: inline-block;
     margin-right: 20px;
-
     line-height: 20px;
     word-break: break-all;
-
-
 }
 
 .form-email {
-
     padding-right: 20px;
     word-break: break-all;
-
-
 }
 
-
-
-
-
-
-
-
-
-
-/* -------------ページネーション------------- */
 .table-page {
     display: flex;
     justify-content: space-between;

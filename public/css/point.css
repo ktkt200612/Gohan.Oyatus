@@ -14,7 +14,6 @@ a:hover {
     color: rgb(91, 91, 7);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ header {
     border-bottom: 0.3rem solid;
     border-color: rgb(205, 205, 205);
     box-shadow: 3px 5px 10px -3px rgb(185, 185, 185);
-
 }
 
 .header__title {
@@ -50,8 +48,6 @@ header {
     font-size: 87%;
 }
 
-
-
 .container {
     text-align: center;
     width: 90%;
@@ -63,24 +59,18 @@ header {
     background-color: rgb(243, 243, 243);
     margin-top: 50px;
     padding-bottom: 30px;
-
 }
 
 .title {
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 40px;
-
 }
-
 
 .title:first-letter {
     font-size: 2em;
     color: rgb(144, 144, 33);
 }
-
-
-
 
 table {
     margin: auto
@@ -88,36 +78,22 @@ table {
 
 th {
     line-height: 40px;
-
 }
-
-
-
 
 th,
 td {
-
-
-
     border-bottom: solid;
     border-color: rgb(162, 162, 162);
     padding-left: 100px;
     margin-left: 80px;
     line-height: 45px;
-
-
 }
 
 tr :first-child {
     font-size: 24px;
     color: rgb(144, 144, 33);
     padding-left: 0px;
-
 }
-
-
-
-
 
 tr:nth-child(2) .rank {
     font-size: 30px;
@@ -125,8 +101,6 @@ tr:nth-child(2) .rank {
     vertical-align: middle;
     background-color: rgb(144, 144, 33);
     border-radius: 50%;
-
-
 }
 
 tr:nth-child(3) .rank {
@@ -135,7 +109,6 @@ tr:nth-child(3) .rank {
     vertical-align: middle;
     background-color: silver;
     border-radius: 50%;
-
 }
 
 tr:nth-child(4) .rank {
@@ -146,7 +119,12 @@ tr:nth-child(4) .rank {
     border-radius: 50%;
 }
 
-.a {
-    margin-left: 700px;
+.explanation-top {
+    margin-left: 600px;
     line-height: 30px;
+}
+
+.explanation-bottom {
+    margin-left: 713px;
+    line-height: 20px;
 }

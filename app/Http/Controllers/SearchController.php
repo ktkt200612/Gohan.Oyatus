@@ -24,9 +24,9 @@ class SearchController extends Controller
     public function search(Request $request) //検索処理
     {
         unset($request['_token']);
-        if ($request->area !== null && $request->genre !== null && $request->search_word !== null) { //全ての検索欄が埋まっている場合
+        if ($request->area !== null && $request->genre !== null && $request->search_word !== null) {
             $result = Store::searchStore1($request);
-            $keyword = $request->only(['area','genre','search_word']); //検索後の検索欄に検索履歴残す
+            $keyword = $request->only(['area','genre','search_word']);
             return view('index', ['forms' => $result,'keyword' => $keyword]);
 
         } elseif ($request->area !== null && $request->genre !== null && $request->search_word == null) { 
@@ -65,5 +65,4 @@ class SearchController extends Controller
             return view('index', ['forms' => $result,'keyword' => $keyword]);
         }
     }
-
 }

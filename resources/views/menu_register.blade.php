@@ -52,13 +52,13 @@
     @error('kana')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">限定品情報</div>
-    <input type="text" name="limited"  value="{{ old('limited') }}" placeholder="(例) 夏季限定・数量限定 etc">
+    <div class="item">限定品情報 <span class="caution"> ※(例) 夏季限定・数量限定 etc</span></div>
+    <input type="text" name="limited"  value="{{ old('limited') }}">
     @error('limited')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">検索ワード</div>
-    <input type="text" name="search_word"  value="{{ old('search_word') }}" placeholder="料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc" >
+    <div class="item">検索ワード <span class="caution">  ※料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
+    <input type="text" name="search_word"  value="{{ old('search_word') }}">
   </div>
   <div class="register-button">
     <button type="submit"  name="store_id" value="{{ $store_id }}">登録</button>

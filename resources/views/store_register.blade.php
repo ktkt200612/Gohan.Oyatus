@@ -208,8 +208,8 @@
     @error('business_hours')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">電話番号</div>
-    <input type="text" name="phone_number" value="{{ old('phone_number') }}" placeholder="ハイフン無しで数字のみ" >
+    <div class="item">電話番号 <span class="caution">※ハイフン無しで数字のみ</span></div>
+    <input type="text" name="phone_number" value="{{ old('phone_number') }}">
     @if($errors->has('phone_number'))
 			@foreach($errors->get('phone_number') as $message)
 				<span class="error-message">{{$message}}</span>

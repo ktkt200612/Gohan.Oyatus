@@ -17,7 +17,7 @@ class SearchController extends Controller
 
     public function index() //検索ページ及び検索結果ページ表示
     {
-        $result = Store::orderBy("kana","asc");
+        $result = Store::orderBy("kana","asc")->paginate(10);
         return view('index', ['forms' => $result]);
     }
 

@@ -27,40 +27,40 @@
 
                 <!-- Name -->
                 <div>
-                    <x-label for="name"/>
-                    <x-input type="text" name="name" class="name" :value="old('name')" placeholder="ユーザー名"  required autofocus />
+                    <label for="name">
+                    <input type="text" name="name" class="name" :value="old('name')" placeholder="ユーザー名"  required autofocus >
                 </div>
 
                 <!-- Email Address -->
                 <div>
-                    <x-label for="email"/>
-                    <x-input type="email" name="email" class="email" :value="old('email')" placeholder="メールアドレス"  required />
+                    <label for="email">
+                    <input type="email" name="email" class="email" :value="old('email')" placeholder="メールアドレス"  required />
                 </div>
 
                 <!-- Password -->
                 <div>
-                    <x-label for="password"/>
-                    <x-input
+                    <label for="password">
+                    <input
                         class="password"
                         type="password"
                         name="password"
                         required autocomplete="new-password" 
-                        placeholder="パスワード"  />
+                        placeholder="パスワード"  >
                 </div>
 
                 <!-- Confirm Password -->
                 <div>
-                    <x-label for="password_confirmation"/>
-                    <x-input
+                    <label for="password_confirmation">
+                    <input
                         class="confirm"
                         type="password"
                         name="password_confirmation" required
-                        placeholder="確認用パスワード"  />
+                        placeholder="確認用パスワード"  >
                 </div>
 
-                <x-button class="register">
+                <button class="register">
                     {{ __('会員登録') }}
-                </x-button>
+                </button>
             </form>
         </div>
         <p class="text">アカウントをお持ちの方はこちらから</p>

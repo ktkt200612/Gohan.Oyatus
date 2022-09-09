@@ -29,23 +29,23 @@
 
                 <!-- Email Address -->
                 <div>
-                    <x-input class="email" type="email" name="email" :value="old('email')" placeholder="メールアドレス" required autofocus />
+                    <input class="email" type="email" name="email" :value="old('email')" placeholder="メールアドレス" required autofocus >
                 </div>
 
                 <!-- Password -->
                 <div>
-                    <x-input class="password"
+                    <input class="password"
                         type="password"
                         name="password"
                         required autocomplete="current-password" 
-                        placeholder="パスワード"/>
+                        placeholder="パスワード">
                 </div>
 
                 <!-- Login -->
                 <div>                
-                    <x-button class="login">
+                    <button class="login">
                         {{ __('ログイン') }}
-                    </x-button>
+                    </button>
             </form>
         </div>
         <p class="text">アカウントをお持ちでない方はこちらから</p>

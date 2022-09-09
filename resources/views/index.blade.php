@@ -19,12 +19,12 @@
       <li class="header__nav--list">
         <form method="POST" action="{{ route('logout') }}">
         @csrf
-          <x-dropdown-link :href="route('logout')"
+          <a href="route('logout')"
             onclick="event.preventDefault();
             this.closest('form').submit();">
             {{ __('ログアウト') }}
-          </x-dropdown-link>
-        </form></a>
+          </a>
+        </form>
       </li>
       <li class="header__nav--list">
         <p><?php $user = Auth::user(); ?>{{ $user->name}}さん</p>

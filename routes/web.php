@@ -6,7 +6,6 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PointController;
-use App\Http\Controllers\TwitterController;
 
 
 /*
@@ -40,8 +39,6 @@ Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 Route::post('/contact/confirm', [ContactController::class, 'contact_confirm'])->name("contact.confirm");
 Route::post('/contact/thanks', [ContactController::class, 'contact_send'])->name("contact.send");
 Route::get('/point', [PointController::class, 'point'])->name("point");
-Route::get('/login/twitter', [TwitterController::class, 'redirectToProvider'])->name("twitter.login");
-Route::get('/login/twitter/callback',[TwitterController::class, 'handleProviderCallback']);
 
 //会員登録済みのユーザーのみアクセス可能
 Route::group(['middleware' => ['auth']], function(){

@@ -52,7 +52,4 @@
         <p class="register"><a href="/register">会員登録</a></p>
         </div>
     </div>
-    <p class="mt-2">
-    <a href="{{route('twitter.login')}}" class="btn btn-outline-primary">Twitterログイン</a>
-</p>
 @endsection

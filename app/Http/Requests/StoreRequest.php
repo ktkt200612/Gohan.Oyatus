@@ -24,7 +24,7 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'outside_photo' => 'max:6144',
+            'outside_photo' => 'file|max:6144',
             'inside_photo' => 'max:6144',
             'store_name' => 'required|max:36',
             'kana' => 'required',

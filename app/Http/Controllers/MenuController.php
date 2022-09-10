@@ -22,8 +22,8 @@ class MenuController extends Controller
     {   
         unset($request['_token']);
         $form = $request->all()+ ['user_id' => Auth::id()];
-        $photo = $request->file('photo');
-        $photo = $photo->store('img','public');
+        $photo = file_get_contents($request->photo);
+        $photo = base64_encode($photo);
         $menu = Menu::create([
             'photo' => $photo,
         ]+$form);

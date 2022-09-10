@@ -49,9 +49,9 @@ class MenuController extends Controller
         $form = $request->all();
 
         // 写真も更新する時
-        if ($request->file('photo') !== null) { 
-            $photo = $request->file('photo');
-            $photo = $photo->store('img','public'); 
+        if ($request->photo !== null) { 
+            $photo = file_get_contents($request->photo);
+            $photo = base64_encode($photo);
             Menu::where('id',$request->id)->update([
             'photo' => $photo,
         ]+$form);

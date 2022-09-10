@@ -31,8 +31,8 @@ class CreateStoresTable extends Migration
             $table->string('regular_holiday')->nullable();
             $table->string('business_hours')->nullable();
             $table->char('store_phone_number')->nullable();
-            $table->string('outside_photo');
-            $table->string('inside_photo');
+            $table->longText('outside_photo');
+            $table->longText('inside_photo');
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable();
         });

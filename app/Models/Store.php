@@ -149,10 +149,10 @@ class Store extends Model
     public static function registerStore(StoreRequest $request) //店舗登録関数
     {
         $form = $request->all()+ ['user_id' => Auth::id()];
-        $outside = $request->file('outside_photo');
-        $inside = $request->file('inside_photo');
-        $outside = $outside->store('img','public');
-        $inside = $inside->store('img','public');
+        $outside = file_get_contents($request->outside_photo);
+        $outside = base64_encode($outside);
+        $inside = file_get_contents($request->inside_photo);
+        $inside = base64_encode($inside);
         $store = Store::create([
             'outside_photo' => $outside,
             'inside_photo' => $inside,
@@ -165,10 +165,10 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $outside = $request->file('outside_photo');
-        $inside = $request->file('inside_photo');
-        $outside = $outside->store('img','public');
-        $inside = $inside->store('img','public'); 
+        $outside = file_get_contents($request->outside_photo);
+        $outside = base64_encode($outside);
+        $inside = file_get_contents($request->inside_photo);
+        $inside = base64_encode($inside);
         Store::where('id',$request->id)->update([
         'outside_photo' => $outside,
         'inside_photo' => $inside,
@@ -180,8 +180,8 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $outside = $request->file('outside_photo');
-        $outside = $outside->store('img','public');
+        $outside = file_get_contents($request->outside_photo);
+        $outside = base64_encode($outside);
         Store::where('id',$request->id)->update([
         'outside_photo' => $outside,
         ]+$form);
@@ -192,8 +192,8 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $inside = $request->file('inside_photo');
-        $inside = $inside->store('img','public'); 
+        $inside = file_get_contents($request->inside_photo);
+        $inside = base64_encode($inside);
         Store::where('id',$request->id)->update([
         'inside_photo' => $inside,
         ]+$form);

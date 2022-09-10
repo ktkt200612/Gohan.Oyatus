@@ -27,7 +27,7 @@ class MenuRequest extends FormRequest
             'menu_name' => 'required',
             'kana' => 'required',
             'limited' => 'max:14',
-            'photo' => 'max:10240',
+            'photo' => 'max:6144',
         ];
     }
     public function messages()
@@ -36,7 +36,7 @@ class MenuRequest extends FormRequest
             'menu_name.required' => '※料理名を入力してください',
             'kana.required' => '※かなを入力してください',
             'limited.max' => '※14文字以内で入力してください',
-            'photo.max' => '※画像ファイルサイズを10MB未満にしてください',
+            'photo.max' => '※画像ファイルサイズを6MB未満にしてください',
             
         ];
     }

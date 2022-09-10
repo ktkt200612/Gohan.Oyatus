@@ -24,8 +24,8 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'outside_photo' => 'max:6144',
-            'inside_photo' => 'max:6144',
+            'outside_photo' => 'max:10240',
+            'inside_photo' => 'max:10240',
             'store_name' => 'required|max:36',
             'kana' => 'required',
             'area' => 'required',
@@ -39,8 +39,8 @@ class StoreRequest extends FormRequest
     public function messages()
     {
         return [
-            'outside_photo.max' => '※画像ファイルサイズを6MB未満にしてください',
-            'inside_photo.max' => '※画像ファイルサイズを6MB未満にしてください',
+            'outside_photo.max' => '※画像ファイルサイズを10MB未満にしてください',
+            'inside_photo.max' => '※画像ファイルサイズを10MB未満にしてください',
             'store_name.required' => '※店舗名を入力してください',
             'store_name.max' => '※36文字以内で入力してください',
             'kana.required' => '※かなを入力してください',

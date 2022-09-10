@@ -22,8 +22,8 @@ class MenuController extends Controller
     {   
         unset($request['_token']);
         $form = $request->all()+ ['user_id' => Auth::id()];
-        $photo = file_get_contents($request->photo);
-        $photo = base64_encode($photo);
+        $photo = $request->file('photo');
+        $photo = $photo->store('img','public');
         $menu = Menu::create([
             'photo' => $photo,
         ]+$form);
@@ -49,9 +49,9 @@ class MenuController extends Controller
         $form = $request->all();
 
         // 写真も更新する時
-        if ($request->photo !== null) { 
-            $photo = file_get_contents($request->photo);
-            $photo = base64_encode($photo);
+        if ($request->file('photo') !== null) { 
+            $photo = $request->file('photo');
+            $photo = $photo->store('img','public'); 
             Menu::where('id',$request->id)->update([
             'photo' => $photo,
         ]+$form);

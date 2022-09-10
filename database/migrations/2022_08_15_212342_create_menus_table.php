@@ -21,7 +21,7 @@ class CreateMenusTable extends Migration
             $table->string('kana');
             $table->string('limited')->nullable();
             $table->string('search_word')->nullable();
-            $table->longText('photo');
+            $table->string('photo');
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->nullable();
         });

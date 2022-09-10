@@ -44,15 +44,15 @@ class StoreController extends Controller
     public function store_edit(StoreRequest $request) //店舗編集
     {
         // 外観写真も内観写真も更新する時
-        if ($request->outside_photo !== null && $request->inside_photo !== null) { 
+        if ($request->file('outside_photo') !== null && $request->file('inside_photo') !== null) { 
             Store::editStore1($request); 
 
         // 外観写真のみ更新する時
-        } elseif ($request->outside_photo !== null && $request->inside_photo == null) { 
+        } elseif ($request->file('outside_photo') !== null && $request->file('inside_photo') == null) { 
             Store::editStore2($request); 
             
         // 内観写真のみ更新する時
-        } elseif ($request->outside_photo == null && $request->inside_photo !== null) { 
+        } elseif ($request->file('outside_photo') == null && $request->file('inside_photo') !== null) { 
             Store::editStore3($request); 
             
         // 写真の変更がない時

@@ -68,7 +68,7 @@
           @if($loop->iteration %2 !=0)
             <tr>
           @endif
-          <td class="photo"><img src="data:/png;base64,{{ $item->photo }}" width="300" height="300" onerror="this.src='image/no_image.png';this.onerror=false;" ></td>
+          <td class="photo"><img src="data:photo/png;base64,{{ $item->photo }}" width="300" height="300" onerror="this.src='image/no_image.png';this.onerror=false;" ></td>
           <td class="menu-name">{{ $item->menu_name }}</td>
           <td class="limited">{{ $item->limited }}</td>
           <td class="menu-edit-button">

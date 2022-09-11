@@ -32,7 +32,7 @@ class StoreRequest extends FormRequest
             'store_address' => 'required|max:40',
             'genre1' => 'required',
             'regular_holiday' => 'max:30',
-            'business_hours' => 'max:30',
+            'business_hours' => 'max:50',
             'store_phone_number' => 'nullable|max:99999999999999|numeric',
         ];
     }
@@ -49,7 +49,7 @@ class StoreRequest extends FormRequest
             'store_address.max' => '※40文字以内で入力してください',
             'genre1.required' => '※ジャンルを1つ以上選択してください',
             'regular_holiday.max' => '※30文字以内で入力してください',
-            'business_hours.max' => '※30文字以内で入力してください',
+            'business_hours.max' => '※50文字以内で入力してください',
             'store_phone_number.numeric' => '※数字で入力してください(ハイフン無し)',
             'store_phone_number.max' => '※14文字以内で入力してください',
         ];

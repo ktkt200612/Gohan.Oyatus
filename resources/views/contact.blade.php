@@ -34,7 +34,7 @@
   </nav>
 </header>
 
-<h1 class="title">お問い合わせ・アンケート<br>※アンケートだけでもぜひお願致します</h1>
+<h1 class="title">お問い合わせ・アンケート<br>※アンケートだけでもぜひお願い致します</h1>
 <div class="container">
   <form action="{{ route('contact.confirm') }}" method="post" >
     @csrf

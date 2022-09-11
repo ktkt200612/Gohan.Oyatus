@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreRequest;
+use Illuminate\Support\Facades\Storage;
 
 class Store extends Model
 {
@@ -149,10 +150,10 @@ class Store extends Model
     public static function registerStore(StoreRequest $request) //店舗登録関数
     {
         $form = $request->all()+ ['user_id' => Auth::id()];
-        $outside = $request->file('outside_photo');
-        $inside = $request->file('inside_photo');
-        $outside = $outside->store('img','public');
-        $inside = $inside->store('img','public');
+        $outside_file = $request->file('outside_photo');
+        $outside=Storage::disk('s3')->putFile('/', $outside_file,'public');
+        $inside_file = $request->file('inside_photo');
+        $inside=Storage::disk('s3')->putFile('/', $inside_file,'public');
         $store = Store::create([
             'outside_photo' => $outside,
             'inside_photo' => $inside,
@@ -165,10 +166,10 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $outside = $request->file('outside_photo');
-        $inside = $request->file('inside_photo');
-        $outside = $outside->store('img','public');
-        $inside = $inside->store('img','public'); 
+        $outside_file = $request->file('outside_photo');
+        $outside=Storage::disk('s3')->putFile('/', $outside_file,'public');
+        $inside_file = $request->file('inside_photo');
+        $inside=Storage::disk('s3')->putFile('/', $inside_file,'public');
         Store::where('id',$request->id)->update([
         'outside_photo' => $outside,
         'inside_photo' => $inside,
@@ -180,8 +181,8 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $outside = $request->file('outside_photo');
-        $outside = $outside->store('img','public');
+        $outside_file = $request->file('outside_photo');
+        $outside=Storage::disk('s3')->putFile('/', $outside_file,'public');
         Store::where('id',$request->id)->update([
         'outside_photo' => $outside,
         ]+$form);
@@ -192,8 +193,8 @@ class Store extends Model
         unset($request['_token']);
         Store::find($request->id);
         $form = $request->all();
-        $inside = $request->file('inside_photo');
-        $inside = $inside->store('img','public'); 
+        $inside_file = $request->file('inside_photo');
+        $inside=Storage::disk('s3')->putFile('/', $inside_file,'public');
         Store::where('id',$request->id)->update([
         'inside_photo' => $inside,
         ]+$form);

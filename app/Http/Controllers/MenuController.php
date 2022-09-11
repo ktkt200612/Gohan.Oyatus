@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Menu;
 use App\Models\Store;
 use App\Http\Requests\MenuRequest;
+use Illuminate\Support\Facades\Storage;
+
 
 class MenuController extends Controller
 {
@@ -22,8 +24,8 @@ class MenuController extends Controller
     {   
         unset($request['_token']);
         $form = $request->all()+ ['user_id' => Auth::id()];
-        $photo = $request->file('photo');
-        $photo = $photo->store('img','public');
+        $file = $request->file('photo');
+        $photo=Storage::disk('s3')->putFile('/', $file,'public');
         $menu = Menu::create([
             'photo' => $photo,
         ]+$form);
@@ -50,8 +52,8 @@ class MenuController extends Controller
 
         // 写真も更新する時
         if ($request->file('photo') !== null) { 
-            $photo = $request->file('photo');
-            $photo = $photo->store('img','public'); 
+            $file = $request->file('photo');
+            $photo=Storage::disk('s3')->putFile('/', $file,'public');
             Menu::where('id',$request->id)->update([
             'photo' => $photo,
         ]+$form);

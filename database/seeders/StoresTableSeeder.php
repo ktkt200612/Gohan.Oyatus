@@ -26,8 +26,8 @@ class StoresTableSeeder extends Seeder
             'regular_holiday' => '平日',
             'business_hours' => '8時〜17時',
             'store_phone_number' => '0765747554',
-            'outside_photo' => 'img/outside1.jpg',
-            'inside_photo' => 'img/inside2.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -40,8 +40,8 @@ class StoresTableSeeder extends Seeder
             'regular_holiday' => '土日',
             'business_hours' => '11時〜14時（ラストオーダー13時）',
             'store_phone_number' => '0784844664',
-            'outside_photo' => 'img/outside2.jpg',
-            'inside_photo' => 'img/inside1.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -53,8 +53,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年中無休',
             'business_hours' => '11時〜14時（ラストオーダー13時）',
-            'outside_photo' => 'img/outside1.jpg',
-            'inside_photo' => 'img/inside1.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -66,8 +66,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'カフェ',
             'business_hours' => '11時〜17時',
             'store_phone_number' => '0784444664',
-            'outside_photo' => 'img/outside1.jpg',
-            'inside_photo' => 'img/inside4.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -82,8 +82,8 @@ class StoresTableSeeder extends Seeder
             'business_hours' => '11時〜14時（ラストオーダー13時） 17
             時〜22時（ラストオーダー22時30分）',
             'store_phone_number' => '0785844664',
-            'outside_photo' => 'img/outside2.jpg',
-            'inside_photo' => 'img/inside2.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -95,8 +95,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年中無休',
             'store_phone_number' => '0784846474',
-            'outside_photo' => 'img/outside4.jpg',
-            'inside_photo' => 'img/inside1.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -110,8 +110,8 @@ class StoresTableSeeder extends Seeder
             'regular_holiday' => '日',
             'business_hours' => '11時〜21時',
             'store_phone_number' => '0784444664',
-            'outside_photo' => 'img/outside3.jpg',
-            'inside_photo' => 'img/inside2.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -123,8 +123,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'カフェ',
             'business_hours' => '9時〜17時',
             'store_phone_number' => '0784444564',
-            'outside_photo' => 'img/outside2.jpg',
-            'inside_photo' => 'img/inside4.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -139,8 +139,8 @@ class StoresTableSeeder extends Seeder
             'business_hours' => '13時〜16時（ラストオーダー15時） 17
             時〜22時（ラストオーダー22時30分）',
             'store_phone_number' => '0782224664',
-            'outside_photo' => 'img/outside3.jpg',
-            'inside_photo' => 'img/inside3.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -152,8 +152,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年中無休',
             'store_phone_number' => '0784846474',
-            'outside_photo' => 'img/outside3.jpg',
-            'inside_photo' => 'img/inside3.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -167,8 +167,8 @@ class StoresTableSeeder extends Seeder
             'regular_holiday' => '日',
             'business_hours' => '11時〜21時',
             'store_phone_number' => '0784444664',
-            'outside_photo' => 'img/outside2.jpg',
-            'inside_photo' => 'img/inside3.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -180,8 +180,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年末年始',
             'store_phone_number' => '0784446474',
-            'outside_photo' => 'img/outside3.jpg',
-            'inside_photo' => 'img/inside3.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
         $param = [
@@ -195,8 +195,8 @@ class StoresTableSeeder extends Seeder
             'regular_holiday' => '不定休',
             'business_hours' => '11時〜21時',
             'store_phone_number' => '0784444664',
-            'outside_photo' => 'img/outside3.jpg',
-            'inside_photo' => 'img/inside3.jpg',
+            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
     }

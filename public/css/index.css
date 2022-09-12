@@ -164,6 +164,7 @@ button {
     margin-bottom: 20px;
     line-height: 30px;
     word-break: break-all;
+    color: black;
 }
 
 .store-name:hover {

@@ -48,12 +48,12 @@
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">店舗名<span class="required">必須</span></div>
-    <input type="text" name="store_name" value = {{ $form->store_name }}>
+    <input type="text" name="store_name" value = "{{ $form->store_name }}">
     @error('store_name')
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">かな<span class="required">必須</span></div>
-    <input type="text" name="kana"  value = {{ $form->kana }}>
+    <input type="text" name="kana"  value = "{{ $form->kana }}">
     @error('kana')
       <span class="error-message">{{$message}}</span>
     @enderror
@@ -96,7 +96,7 @@
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">住所<span class="required">必須</span></div>
-    <input type="text" name="store_address" value = {{ $form->store_address }}>
+    <input type="text" name="store_address" value = "{{ $form->store_address }}">
     @error('store_address')
       <span class="error-message">{{$message}}</span>
     @enderror
@@ -206,17 +206,17 @@
       @enderror
     </div>
     <div class="item">定休日</div>
-    <input type="text" name="regular_holiday" value = {{ $form->regular_holiday }}>
+    <input type="text" name="regular_holiday" value = "{{ $form->regular_holiday }}">
     @error('regular_holiday')
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">営業時間</div>
-    <input type="text" name="business_hours" value = {{ $form->business_hours }}>
+    <input type="text" name="business_hours" value = "{{ $form->business_hours }}">
     @error('business_hours')
       <span class="error-message">{{$message}}</span>
     @enderror
     <div class="item">電話番号 <span class="caution">※ハイフン無しで数字のみ</span></div>
-    <input type="text" name="store_phone_number" value = {{ $form->store_phone_number }} >
+    <input type="text" name="store_phone_number" value = "{{ $form->store_phone_number }}" >
     @if($errors->has('store_phone_number'))
 			@foreach($errors->get('store_phone_number') as $message)
 				<span class="error-message">{{$message}}</span>

@@ -210,6 +210,7 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
+    color: black;
 }
 
 .holiday-item {
@@ -217,6 +218,7 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
+    color: black;
 }
 
 .hours-item {
@@ -224,6 +226,7 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
+    color: black;
 }
 
 .number-item {
@@ -231,6 +234,7 @@ button {
     vertical-align: top;
     margin-bottom: 14px;
     padding-left: 10px;
+    color: black;
 }
 
 .pagination {

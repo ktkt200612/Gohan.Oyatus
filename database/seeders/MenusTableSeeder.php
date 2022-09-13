@@ -220,5 +220,53 @@ class MenusTableSeeder extends Seeder
             'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
         ];
         DB::table('menus')->insert($param);
+
+
+
+        $param = [
+            'user_id' => '5',
+            'store_id' => '1',
+            'menu_name' => 'てっさ',
+            'kana' => 'てっさ',
+            'search_word' => 'ふぐ',
+            'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '6',
+            'store_id' => '3',
+            'menu_name' => 'ももの焼き鳥',
+            'kana' => 'もものやきとり',
+            'search_word' => '地鶏',
+            'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '3',
+            'store_id' => '5',
+            'menu_name' => '味噌餃子',
+            'kana' => 'みそぎょうざ',
+            'search_word' => '中華',
+            'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '5',
+            'store_id' => '1',
+            'menu_name' => 'ナポリタン',
+            'kana' => 'なぽりたん',
+            'search_word' => 'パスタ・ケチャップ',
+            'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
+        ];
+        DB::table('menus')->insert($param);
+        $param = [
+            'user_id' => '6',
+            'store_id' => '5',
+            'menu_name' => 'こころの焼き鳥',
+            'kana' => 'こころのやきとり',
+            'search_word' => '地鶏',
+            'photo' => 'FEg9xSX3u3lwEFgcBFnWfVOaziE4n9TErB1ojvNz.jpg',
+        ];
+        DB::table('menus')->insert($param);
     }
 }

@@ -24,7 +24,7 @@ class StoresTableSeeder extends Seeder
             'genre2' => 'ランチ',
             'genre3' => 'カフェ',
             'regular_holiday' => '平日',
-            'business_hours' => '8時〜17時',
+            'business_hours' => '17:00〜23:30',
             'store_phone_number' => '0765747554',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
@@ -37,10 +37,10 @@ class StoresTableSeeder extends Seeder
             'area' => '紀の川市',
             'store_address' => '和歌山県紀の川市333',
             'genre1' => 'ランチ',
-            'regular_holiday' => '土日',
-            'business_hours' => '11時〜14時（ラストオーダー13時）',
+            'regular_holiday' => '土曜・日曜',
+            'business_hours' => '17:00〜23:30（ラストオーダー13:00）',
             'store_phone_number' => '0784844664',
-            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'outside_photo' => 'vUonxJjlheTgPPHGkZULB9qVkuoDnDRPCxUi1oKz.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
@@ -52,7 +52,7 @@ class StoresTableSeeder extends Seeder
             'store_address' => '和歌山県町勝浦町777',
             'genre1' => 'ランチ',
             'regular_holiday' => '年中無休',
-            'business_hours' => '11時〜14時（ラストオーダー13時）',
+            'business_hours' => '17:00〜22:00',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
@@ -64,7 +64,7 @@ class StoresTableSeeder extends Seeder
             'area' => '和歌山市',
             'store_address' => '和歌山県和歌山市333',
             'genre1' => 'カフェ',
-            'business_hours' => '11時〜17時',
+            'business_hours' => '11:00〜17:30',
             'store_phone_number' => '0784444664',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
@@ -79,10 +79,10 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'genre2' => 'ディナー',
             'regular_holiday' => '水曜日',
-            'business_hours' => '11時〜14時（ラストオーダー13時） 17
-            時〜22時（ラストオーダー22時30分）',
+            'business_hours' => '11:00〜14:00（ラストオーダー13:00） 17
+            :00〜22:00（ラストオーダー22:00）',
             'store_phone_number' => '0785844664',
-            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'outside_photo' => 'vUonxJjlheTgPPHGkZULB9qVkuoDnDRPCxUi1oKz.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
@@ -107,8 +107,8 @@ class StoresTableSeeder extends Seeder
             'store_address' => '和歌山県和歌山市363',
             'genre1' => 'ランチ',
             'genre2' => 'ディナー',
-            'regular_holiday' => '日',
-            'business_hours' => '11時〜21時',
+            'regular_holiday' => '日曜日',
+            'business_hours' => '11:00〜21:00',
             'store_phone_number' => '0784444664',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
@@ -121,9 +121,9 @@ class StoresTableSeeder extends Seeder
             'area' => '由良町',
             'store_address' => '和歌山県由良町555',
             'genre1' => 'カフェ',
-            'business_hours' => '9時〜17時',
+            'business_hours' => '9:00〜17:00',
             'store_phone_number' => '0784444564',
-            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'outside_photo' => 'vUonxJjlheTgPPHGkZULB9qVkuoDnDRPCxUi1oKz.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
@@ -136,8 +136,8 @@ class StoresTableSeeder extends Seeder
             'genre1' => '夜カフェ',
             'genre2' => 'カフェ',
             'regular_holiday' => '水曜日',
-            'business_hours' => '13時〜16時（ラストオーダー15時） 17
-            時〜22時（ラストオーダー22時30分）',
+            'business_hours' => '11:00〜14:00（ラストオーダー13:00） 17
+            :00〜22:00（ラストオーダー22:00）',
             'store_phone_number' => '0782224664',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
@@ -152,7 +152,7 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年中無休',
             'store_phone_number' => '0784846474',
-            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'outside_photo' => 'vUonxJjlheTgPPHGkZULB9qVkuoDnDRPCxUi1oKz.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
@@ -164,8 +164,8 @@ class StoresTableSeeder extends Seeder
             'store_address' => '和歌山県九度山町363',
             'genre1' => 'ランチ',
             'genre2' => 'ディナー',
-            'regular_holiday' => '日',
-            'business_hours' => '11時〜21時',
+            'regular_holiday' => '日曜日',
+            'business_hours' => '11:00〜21:00',
             'store_phone_number' => '0784444664',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
@@ -180,7 +180,7 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'regular_holiday' => '年末年始',
             'store_phone_number' => '0784446474',
-            'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
+            'outside_photo' => 'vUonxJjlheTgPPHGkZULB9qVkuoDnDRPCxUi1oKz.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',
         ];
         DB::table('stores')->insert($param);
@@ -193,7 +193,7 @@ class StoresTableSeeder extends Seeder
             'genre1' => 'ランチ',
             'genre2' => 'ディナー',
             'regular_holiday' => '不定休',
-            'business_hours' => '11時〜21時',
+            'business_hours' => '11:00〜21:30',
             'store_phone_number' => '0784444664',
             'outside_photo' => 'vm7vnnNoSFrXolnA5gbSYo5P9aOhHRU19Jzv0UfO.jpg',
             'inside_photo' => 'BMUiy7bJJePFxzyqh2ojFLnX3N5ijmwy9JaKyOMa.jpg',

@@ -7,8 +7,11 @@
  
 # デモ
  
+一般ユーザー
+![demo1](https://user-images.githubusercontent.com/100775088/189923652-7ff8bc53-29c9-4548-bc6a-5c0eb3ba4222.gif)
 
-https://user-images.githubusercontent.com/100775088/183821607-64dd5346-cf94-40f9-b4ba-f5932a11a16f.mov
+管理人のみ
+![demo2](https://user-images.githubusercontent.com/100775088/189923783-644684d7-27d2-4d12-bce5-e0500a769380.gif)
 
 
  

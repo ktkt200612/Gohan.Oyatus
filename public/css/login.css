@@ -10,11 +10,12 @@ body {
 
 a:not(.header__title) {
     text-decoration: none;
-    color: rgb(121, 121, 8);
+    color: rgb(253, 89, 0);
+    font-weight: 900;
 }
 
 a:hover {
-    color: rgb(91, 91, 7);
+    color: rgb(253, 0, 0);
 }
 
 header {
@@ -41,7 +42,7 @@ header {
 
 .header__title:first-letter {
     font-size: 2em;
-    color: rgb(144, 144, 33);
+    color: rgb(253, 89, 0);
 }
 
 .header__nav--list {

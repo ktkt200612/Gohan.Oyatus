@@ -55,7 +55,7 @@
     </div>
   </div>
   <div class="wrapper-bottom">
-    <div class="title">〜 Menu 〜</div>
+    <div class="title">〜 MENU 〜</div>
     <form action="{{ route('menu.register.page') }}" method="get">
     @csrf
       <div class="menu-register-button">

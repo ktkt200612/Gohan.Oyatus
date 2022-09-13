@@ -35,11 +35,11 @@
 </header>
 
 <div class="about">
-  <p class="about__title">和歌山県内の飲食店を盛り上げよう</p>
+  <p class="about__title">和歌山の飲食店を盛り上げよう</p>
   <div class="pickup">
-    <p class="pickup__text">みんなで飲食店のメニューを作り上げていくサイトです</p>
-    <p class="pickup__text">会員登録をして、おすすめの店舗、料理を投稿して下さい</p>
-    <p class="pickup__text">お店探しにもぜひご利用下さい！！</p>
+    <p class="pickup__text">\ みんなで飲食店のメニューを作り上げていくサイトです /</p>
+    <p class="pickup__text">会員登録をして、お気に入りの店舗、料理を投稿してください！</p>
+    <p class="pickup__text">お店探しにもぜひご利用ください 🔍</p>
   </div>
 </div>
 

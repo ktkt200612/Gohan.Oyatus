@@ -7,11 +7,12 @@ body {
 
 a:not(.header__title) {
     text-decoration: none;
-    color: rgb(121, 121, 8);
+    color: rgb(253, 89, 0);
+    font-weight: 900;
 }
 
 a:hover {
-    color: rgb(91, 91, 7);
+    color: rgb(253, 0, 0);
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 
 .header__title:first-letter {
     font-size: 2em;
-    color: rgb(144, 144, 33);
+    color: rgb(253, 89, 0);
 }
 
 .header__nav--list {
@@ -82,11 +83,11 @@ header {
     margin-left: 110px;
     border: solid;
     border-radius: 10px;
-    border-color: rgb(222, 222, 181);
+    border-color: rgb(255, 240, 228);
     width: 82%;
     padding-top: 51px;
     padding-left: 17px;
-    background-color: rgb(237, 237, 186);
+    background-color: rgb(255, 240, 228);
 }
 
 .item {
@@ -108,7 +109,7 @@ header {
 
 .caution {
     color: rgb(121, 121, 121);
-    font-size: 15px;
+    font-size: 12px;
     font-weight: light;
 }
 

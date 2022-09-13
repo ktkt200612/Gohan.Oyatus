@@ -37,12 +37,12 @@
 <form method="POST" action="{{ route('store.edit') }}" enctype="multipart/form-data" >
   @csrf
   <div class="edit-item">
-    <div class="item">外観写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードして下さい</span></div>
+    <div class="item">外観写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードしてください</span></div>
     <input type="file" name="outside_photo" accept=".png, .jpg, .jpeg, .pdf">
     @error('outside_photo')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">内観写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードして下さい</span></div>
+    <div class="item">内観写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードしてください</span></div>
     <input type="file" name="inside_photo" accept=".png, .jpg, .jpeg, .pdf">
     @error('inside_photo')
       <span class="error-message">{{$message}}</span>

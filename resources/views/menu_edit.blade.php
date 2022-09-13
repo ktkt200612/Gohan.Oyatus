@@ -38,7 +38,7 @@
 <form method="POST" action="{{ route('menu.edit') }}" enctype="multipart/form-data" >
   @csrf
   <div class="edit-item">
-    <div class="item">写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードして下さい</span></div>
+    <div class="item">写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードしてください</span></div>
     <input type="file" name="photo" accept=".png, .jpg, .jpeg, .pdf">
     @error('photo')
       <span class="error-message">{{$message}}</span>

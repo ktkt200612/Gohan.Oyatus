@@ -112,7 +112,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre2">
         <option>{{ $form->genre2 }}</option>
@@ -124,7 +124,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre3">
         <option>{{ $form->genre3 }}</option>
@@ -136,7 +136,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre4">
         <option>{{ $form->genre4 }}</option>
@@ -148,7 +148,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
     </div>
     <br>
@@ -163,7 +163,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre6">
         <option>{{ $form->genre6 }}</option>
@@ -175,7 +175,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre7">
         <option>{{ $form->genre7 }}</option>
@@ -187,7 +187,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       <select name="genre8" >
         <option>{{ $form->genre8 }}</option>
@@ -199,7 +199,7 @@
         <option>夜カフェ</option>
         <option>バー</option>
         <option>居酒屋</option>
-        <option>定食等</option>
+        <option>テイクアウト</option>
       </select>
       @error('genre1')
         <span class="error-message">{{$message}}</span>

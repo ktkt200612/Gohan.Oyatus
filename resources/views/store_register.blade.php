@@ -111,7 +111,7 @@
         <option value="夜カフェ" @if(old('genre1')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre1')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre1')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre1')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre1')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre2">
         <option></option>
@@ -122,7 +122,7 @@
         <option value="夜カフェ" @if(old('genre2')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre2')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre2')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre2')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre2')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre3">
         <option></option>
@@ -133,7 +133,7 @@
         <option value="夜カフェ" @if(old('genre3')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre3')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre3')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre3')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre3')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre4">
         <option></option>
@@ -144,7 +144,7 @@
         <option value="夜カフェ" @if(old('genre4')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre4')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre4')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre4')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre4')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
     </div>
     <br>
@@ -158,7 +158,7 @@
         <option value="夜カフェ" @if(old('genre5')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre5')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre5')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre5')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre5')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre6">
         <option></option>
@@ -169,7 +169,7 @@
         <option value="夜カフェ" @if(old('genre6')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre6')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre6')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre6')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre6')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre7">
         <option></option>
@@ -180,7 +180,7 @@
         <option value="夜カフェ" @if(old('genre7')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre7')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre7')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre7')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre7')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       <select name="genre8">
         <option></option>
@@ -191,7 +191,7 @@
         <option value="夜カフェ" @if(old('genre8')=='夜カフェ') selected @endif>夜カフェ</option>
         <option value="バー" @if(old('genre8')=='バー') selected @endif>バー</option>
         <option value="居酒屋" @if(old('genre8')=='居酒屋') selected @endif>居酒屋</option>
-        <option value="定食等" @if(old('genre8')=='定食等') selected @endif>定食等</option>
+        <option value="テイクアウト" @if(old('genre8')=='テイクアウト') selected @endif>テイクアウト</option>
       </select>
       @error('genre1')
         <span class="error-message">{{$message}}</span>

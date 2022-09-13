@@ -84,7 +84,7 @@
         <option value="夜カフェ">夜カフェ</option>
         <option value="バー">バー</option>
         <option value="居酒屋">居酒屋</option>
-        <option value="定食等">定食等</option>
+        <option value="テイクアウト">テイクアウト</option>
       </select>
     </div>
     <div class="word">

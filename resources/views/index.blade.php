@@ -119,7 +119,7 @@
         {{ $form->store_name }}
         </div>         
         <div class="address">【住所】</div><div class="address-item">{{ $form->store_address }}</div>
-        <div class="genre">【ジャンル】</div><div class="genre-item">{{ $form->genre1 }} @if(isset( $form->genre2 ))/{{ $form->genre2 }}@endif @if(isset( $form->genre3 ))/{{ $form->genre3 }}@endif @if(isset( $form->genre4 ))/{{ $form->genre4 }}@endif @if(isset( $form->genre5 ))/{{ $form->genre5 }}@endif @if(isset( $form->genre6 ))/{{ $form->genre6 }}@endif @if(isset( $form->genre7 ))/{{ $form->genre7 }}@endif  @if(isset( $form->genre8 ))/{{ $form->genre8 }}@endif</div>
+        <div class="genre">【ジャンル】</div><div class="genre-item">{{ $form->genre1 }} @if(isset( $form->genre2 ))/ {{ $form->genre2 }}@endif @if(isset( $form->genre3 ))/ {{ $form->genre3 }}@endif @if(isset( $form->genre4 ))/ {{ $form->genre4 }}@endif @if(isset( $form->genre5 ))/ {{ $form->genre5 }}@endif @if(isset( $form->genre6 ))/ {{ $form->genre6 }}@endif @if(isset( $form->genre7 ))/ {{ $form->genre7 }}@endif  @if(isset( $form->genre8 ))/ {{ $form->genre8 }}@endif</div>
         <div class="holiday">【定休日】</div><div class="holiday-item">{{ $form->regular_holiday }}</div>
         <div class="hours">【営業時間】</div><div class="hours-item">{{ $form->business_hours }}</div>
         <div class="number">【電話番号】</div><div class="number-item">{{ $form->store_phone_number }}</div>

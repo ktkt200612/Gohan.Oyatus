@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png">
 
     <title>Gohan.Oyatsu</title>
+    <meta name="google-site-verification" content="ZlfvgbMn0LMtonsbNQdzsYgRIE36vTpYQGd-eA7s_6Q" />
 </head>
 
 <body>

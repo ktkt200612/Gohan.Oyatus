@@ -43,7 +43,7 @@
     @error('photo')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">料理名<span class="required">必須</span></div>
+    <div class="item">メニュー名<span class="required">必須</span></div>
     <input type="text" name="menu_name" value = "{{ $form->menu_name }}">
     @error('menu_name')
       <span class="error-message">{{$message}}</span>
@@ -58,7 +58,7 @@
     @error('limited')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">検索ワード <span class="caution">  ※料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
+    <div class="item">検索ワード <span class="caution">  ※メニューにつながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
     <input type="text" name="search_word" value = "{{ $form->search_word }}" >
   </div>
   <div class="edit-button">

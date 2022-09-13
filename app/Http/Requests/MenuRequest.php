@@ -33,7 +33,7 @@ class MenuRequest extends FormRequest
     public function messages()
     {
         return [
-            'menu_name.required' => '※料理名を入力してください',
+            'menu_name.required' => '※メニュー名を入力してください',
             'kana.required' => '※かなを入力してください',
             'limited.max' => '※14文字以内で入力してください',
             'photo.max' => '※画像ファイルサイズを10MB未満にしてください',

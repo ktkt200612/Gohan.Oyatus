@@ -38,12 +38,12 @@
 <form method="POST" action="{{ route('menu.register') }}" enctype="multipart/form-data" >
 @csrf
   <div class="register-item">
-    <div class="item">料理写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードしてください</span></div>
+    <div class="item">メニュー写真<span class="required">必須</span> <span class="caution">※スクエア型でアップロードしてください</span></div>
     <input type="file" name="photo" accept=".png, .jpg, .jpeg, .pdf" required>
     @error('photo')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">料理名<span class="required">必須</span></div>
+    <div class="item">メニュー名<span class="required">必須</span></div>
     <input type="text" name="menu_name" value="{{ old('menu_name') }}">
     @error('menu_name')
       <span class="error-message">{{$message}}</span>
@@ -58,7 +58,7 @@
     @error('limited')
       <span class="error-message">{{$message}}</span>
     @enderror
-    <div class="item">検索ワード <span class="caution">  ※料理につながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
+    <div class="item">検索ワード <span class="caution">  ※メニューにつながるワードを入力　(例) パフェ・いちご・魚・中華 etc</span></div>
     <input type="text" name="search_word"  value="{{ old('search_word') }}">
   </div>
   <div class="register-button">

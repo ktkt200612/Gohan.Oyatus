@@ -9,11 +9,11 @@
  
 一般ユーザー
 
-![demo1](https://user-images.githubusercontent.com/100775088/189923652-7ff8bc53-29c9-4548-bc6a-5c0eb3ba4222.gif)
+![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
 
 管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/189923783-644684d7-27d2-4d12-bce5-e0500a769380.gif)
+![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
 
 
  

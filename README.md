@@ -7,9 +7,14 @@
  
 # デモ
  
-店舗・メニュー登録機能
+店舗登録機能
 
-https://user-images.githubusercontent.com/100775088/190538291-4fce44f3-5bb8-40e1-b36f-20da3b6da853.mov
+https://user-images.githubusercontent.com/100775088/190541608-bbf22821-fa45-4b0e-a17e-caee7d48e87f.mov
+
+
+メニュー登録機能
+
+https://user-images.githubusercontent.com/100775088/190541673-c1849871-7dec-4184-9a1c-afbdf5b215f6.mov
 
 
 検索機能
@@ -39,7 +44,7 @@ https://user-images.githubusercontent.com/100775088/190538752-010e046c-0358-4018
 
 お問合せ内容閲覧機能（管理人のみ閲覧可）
 
-https://user-images.githubusercontent.com/100775088/190538940-60110f83-ebb0-4467-9a48-768c25669a25.mov
+https://user-images.githubusercontent.com/100775088/190541544-5185a13a-03e6-4255-8abd-36ce12805bfc.mov
 
 
  

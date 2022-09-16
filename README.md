@@ -7,61 +7,39 @@
  
 # デモ
  
-一般ユーザー
+店舗・メニュー登録機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538291-4fce44f3-5bb8-40e1-b36f-20da3b6da853.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+検索機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538460-0b5712ea-d73f-41ca-9248-6a875ad3d960.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+メニュー編集機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538576-a08ce8a8-ad04-4fff-b02a-c32deff75867.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+メニュー削除機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538640-1c908dbb-5ee1-4e7a-9010-83ede7e399bc.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+ランキング機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538700-87c0abd5-2884-462a-9a52-bc78c2141062.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+お問合せ機能
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
+https://user-images.githubusercontent.com/100775088/190538752-010e046c-0358-4018-8aae-1fd67206cab9.mov
 
-管理人のみ
 
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+お問合せ内容閲覧機能（管理人のみ閲覧可）
 
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
-
-管理人のみ
-
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
-
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
-
-管理人のみ
-
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
-
-![demo1](https://user-images.githubusercontent.com/100775088/190057812-eccafbcb-fb7d-46c2-b02f-08597064b3f9.gif)
-
-管理人のみ
-
-![demo2](https://user-images.githubusercontent.com/100775088/190058036-7b641885-07cc-42a6-b16c-665eaf3053bb.gif)
+https://user-images.githubusercontent.com/100775088/190538940-60110f83-ebb0-4467-9a48-768c25669a25.mov
 
 
  

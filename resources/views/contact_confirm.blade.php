@@ -38,6 +38,9 @@
 <div class="container">
   <form action="{{ route('contact.send') }}" method="post">
     @csrf
+    @auth
+      <input type="hidden" value="{{Auth::id()}}" name="user_id">
+    @endauth
     <div class="item">
       <span class=name>・ユーザー名 or お名前</span>
       {{ $form['name']  }}

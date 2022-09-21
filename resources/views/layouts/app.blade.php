@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png">
+    <link rel="canonical">
 
     <title>Gohan.Oyatsu</title>
     <meta name="google-site-verification" content="ZlfvgbMn0LMtonsbNQdzsYgRIE36vTpYQGd-eA7s_6Q" />
